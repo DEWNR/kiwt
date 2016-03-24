@@ -22,8 +22,15 @@ var paths = {
 
 var getData = function(file) {
   var dataPath = path.resolve(config.root.src, config.tasks.html.src, config.tasks.html.dataFile)
+  var data;
 
-  return JSON.parse(fs.readFileSync(dataPath, 'utf8'))
+  try {
+    data = fs.readFileSync(dataPath, 'utf8');
+  } catch (e) {
+    data = '';
+  }
+
+  return data
 }
 
 
