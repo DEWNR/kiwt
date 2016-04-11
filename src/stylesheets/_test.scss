@@ -1,0 +1,55 @@
+.card-module__wrap {
+    max-width: 70%;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+.card-module {
+    background: #fff;
+    border: 1px solid #f1f1f1;
+    box-shadow: 1px 1px 2px rgba(0,0,0,0.05);
+    min-width: 100%;
+    padding: 10px;
+    margin-bottom: 5%;
+    display: flex;
+    flex-direction: row;
+}
+
+.card-module__title {
+    font-size: 120%;
+    font-weight: 700;
+}
+
+.card-module__content {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1; /* a flex: 1 also works here, but is buggy on IE11 */
+    order: 1;
+}
+
+.card-module__image-wrap {
+    order: 2;
+    width: 50%;
+}
+
+
+.card-module--reversed .card-module__content {
+    order: 2;
+}
+
+.card-module--reversed .card-module__image-wrap {
+    order: 1;
+}
+
+.card-module__image {
+    margin: 20px 0;
+    align-self: center;
+    width: 100%;
+    height: auto;
+    background-repeat: no-repeat;
+    padding-bottom: 76.40845%;
+    background-position: 50% 50%;
+    height: 0;
+    background-size: cover;
+}

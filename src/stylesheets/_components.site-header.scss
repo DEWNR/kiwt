@@ -1,0 +1,26 @@
+/*------------------------------------*\
+    #SITE-HEADER
+\*------------------------------------*/
+
+
+/*header*/.#{$sagovau-namespace}site-header {
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+    /*div*/.#{$sagovau-namespace}site-header__navigation {
+        height: 70px;
+        background: rgba(255, 255, 255, 0.9);
+    }
+
+
+    /*div*/.#{$sagovau-namespace}site-header__banner {
+        text-align: center;
+        padding: 10em 0;
+    }
+
+        /*h1*/.#{$sagovau-namespace}site-header__title {
+            color: #fff;
+        }
