@@ -1,0 +1,172 @@
+/*------------------------------------*\
+    #ARTICLE-CARD
+\*------------------------------------*/
+
+/**
+ * Note that the "article" component can only be imported once, so importing it
+ * in multiple files does not cause duplication.
+ **/
+
+
+// Make sure the "article" extend-only component is included before this content.
+
+@import 'components.article';
+
+/*div*/.#{$sagovau-namespace}article-cards {
+    .column {
+        width: 100% !important;
+
+        @include media-query(large-and-up) {
+            width: 50% !important;
+        }
+    }
+}
+
+/*article*/.#{$sagovau-namespace}article-card {
+    @extend %#{$sagovau-namespace}article;
+
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    max-width: none;
+    padding: 0;
+
+    &--grid {
+
+        @include media-query(large-and-up) {
+            flex-direction: row;
+        }
+    }
+
+    &--1,
+    &--5,
+    &--9 {
+        background-color: #fff0e1;
+    }
+
+    &--2,
+    &--6,
+    &--10 {
+        background-color: #dee0ee;
+    }
+
+    &--3,
+    &--7,
+    &--11 {
+        background-color: #f0ece9;
+    }
+
+    &--4,
+    &--8,
+    &--12 {
+        background-color: #e5eeed;
+    }
+
+}
+
+
+    /*div*/.#{$sagovau-namespace}article-card__image {
+        @extend %#{$sagovau-namespace}article__image;
+
+        margin-bottom: 0;
+        order: 1;
+
+        .last & {
+            order: 2;
+        }
+
+        img {
+            display: block;
+            width: 100%;
+
+            @include media-query(large-and-up) {
+                max-width: 630px;
+                margin-left: auto;
+
+                /*article*/.#{$sagovau-namespace}article-card--grid:nth-child(even) & {
+                    margin-right: auto;
+                    margin-left: inherit;
+                }
+
+                .last & {
+                    margin-left: inherit;
+                    margin-right: auto;
+                }
+            }
+        }
+
+
+        /*article*/.#{$sagovau-namespace}article-card--grid & {
+            @include media-query(large-and-up) {
+                width: 50%;
+            }
+        }
+
+        /*article*/.#{$sagovau-namespace}article-card--grid:nth-child(even) & {
+            @include media-query(large-and-up) {
+                order: 2;
+            }
+        }
+    }
+
+
+    /*div*/.#{$sagovau-namespace}article-card__content {
+
+        @extend %#{$sagovau-namespace}article__content;
+
+        order: 2;
+
+        .last & {
+            order: 1;
+        }
+
+        /*article*/.#{$sagovau-namespace}article-card--grid & {
+            @include media-query(large-and-up) {
+                width: 50%;
+            }
+        }
+
+        /*article*/.#{$sagovau-namespace}article-card--grid:nth-child(even) & {
+            @include media-query(large-and-up) {
+                order: 1;
+            }
+        }
+    }
+
+
+        /*div*/.#{$sagovau-namespace}article-card__body {
+            @extend %#{$sagovau-namespace}article__body;
+
+            padding: $sagovau-spacing-unit-base;
+
+            @include media-query(large-and-up) {
+                max-width: 540px;
+            }
+
+            p:last-child {
+                margin-bottom: 0;
+            }
+
+            /*article*/.#{$sagovau-namespace}article-card--grid & {
+            }
+
+            /*article*/.#{$sagovau-namespace}article-card--grid:nth-child(even) & {
+
+                @include media-query(large-and-up) {
+                    margin-left: auto;
+                }
+            }
+
+            @include media-query(large-and-up) {
+                .first & {
+                    margin-left: auto;
+                }
+            }
+        }
+
+
+            /*h2, h3*/.#{$sagovau-namespace}article-card__title {
+                @extend %#{$sagovau-namespace}article__title;
+
+                padding-top: 0;
+            }

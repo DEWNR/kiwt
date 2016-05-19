@@ -4,23 +4,96 @@
 
 
 /*header*/.#{$sagovau-namespace}site-header {
-    background-position: 50%;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px 0;
+    width: 100%;
+    z-index: 145;
+    box-shadow: 0 -2px 55px rgba(0, 0, 0, 0.3);
+
+    @include media-query(small-and-up) {
+        position: absolute;
+
+        &.is-fixed {
+            position: fixed;
+            top: 0;
+        }
+    }
+
+    .wrapper {
+        align-items: center;
+        display: flex;
+    }
 }
 
-
-    /*div*/.#{$sagovau-namespace}site-header__navigation {
-        height: 70px;
-        background: rgba(255, 255, 255, 0.9);
-    }
-
-
-    /*div*/.#{$sagovau-namespace}site-header__banner {
+    /*a*/.#{$sagovau-namespace}site-header__logotype {
+        color: $sagovau-color-text-base;
+        font-weight: 700;
+        text-decoration: none;
+        max-width: 120px;
         text-align: center;
-        padding: 10em 0;
+        line-height: 1.15;
+        letter-spacing: -0.02em;
+        font-size: 16px;
+        margin: 0 20px;
     }
 
-        /*h1*/.#{$sagovau-namespace}site-header__title {
-            color: #fff;
+
+    /*nav*/.#{$sagovau-namespace}site-header__navigation {
+        flex: 1;
+        margin: 0 20px;
+        text-align: right;
+        width: 100%;
+
+        @media screen and (min-width: 1060px) {
+            text-align: center;
         }
+
+        ul {
+            list-style: none;
+            margin: 0 auto;
+            padding: 0;
+        }
+
+        /*li*/.#{$sagovau-namespace}site-header__navigation-item {
+            border-left: 1px solid $sagovau-color-text-base;
+            display: none;
+            margin: 0 -4px 0 0;
+            padding: 0;
+
+            @media screen and (min-width: 1060px) {
+                display: inline-block;
+            }
+
+            &:first-child {
+                border-left: 0;
+            }
+
+            &.is-button {
+                border-left: 0;
+                display: inline-block;
+
+                a {
+                    padding: 0.5em 1em;
+                    border: 1px solid $sagovau-color-text-base;
+                    border-radius: 4px;
+                    margin: 0;
+                    display: block;
+
+                    @media screen and (min-width: 1060px) {
+                        margin: 0 20px 0 0;
+                    }
+                }
+            }
+        }
+
+        a {
+            color: $sagovau-color-text-base;
+            text-decoration: none;
+            padding: 0.5em 1.2em;
+        }
+    }
+
+
+    .spacer {
+        height: 1500px;
+    }

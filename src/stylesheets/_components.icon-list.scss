@@ -1,0 +1,53 @@
+/*------------------------------------*\
+    #ICON-LIST
+\*------------------------------------*/
+
+/*ul*/.#{$sagovau-namespace}icon-list {
+    margin: 0;
+    padding: 3em 0 0;
+    color: #026937;
+    text-align: left;
+
+    @include media-query(large-and-up) {
+        text-align: center;
+    }
+
+    li {
+        margin: 0;
+        padding: 0 2em 1em;
+        list-style: none;
+        font-weight: 200;
+        display: inline-block;
+        line-height: 1;
+    }
+
+    strong {
+        font-weight: 700;
+        margin-bottom: 0.4em;
+
+        @include media-query(large-and-up) {
+            display: block;
+        }
+    }
+}
+
+/*img*/.#{$sagovau-namespace}icon-list__icon {
+    margin-bottom: 0.8em;
+
+    &--location {
+        width: 20px;
+    }
+
+    &--distance {
+        width: 50px;
+    }
+
+    &--difficulty {
+        width: 35px;
+    }
+
+    &--calendar {
+        width: 25px;
+    }
+
+}

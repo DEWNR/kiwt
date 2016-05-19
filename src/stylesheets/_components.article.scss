@@ -1,0 +1,64 @@
+/*------------------------------------*\
+    #ARTICLE
+\*------------------------------------*/
+
+/**
+ * Shared (extend-only) styling for article content
+ *
+ * Because this module is required by several other components, but must be
+ * included in the code before they are: *
+ * 1. Set a default flag to show that this hasn't already been loaded
+ *
+ * 2. Only add the classes if they haven't already been added
+ *
+ * 3. Set a flag to show that the contents have been loaded
+ **/
+
+$sagovau-article-loaded: false !default; /* [1] */
+
+@if $sagovau-article-loaded != true {    /* [2] */
+
+    /*article*/%#{$sagovau-namespace}article,
+    /*article*/.#{$sagovau-namespace}article {
+        margin: {
+            left: auto;
+            right: auto;
+            bottom: $sagovau-spacing-unit-base;
+        }
+        max-width: $sagovau-max-width + $sagovau-spacing-unit-base * 2;
+        padding: $sagovau-spacing-unit-base * 2 $sagovau-spacing-unit-base;
+    }
+
+
+        /*img*/%#{$sagovau-namespace}article__image,
+        /*img*/.#{$sagovau-namespace}article__image {
+            margin-bottom: $sagovau-spacing-unit-base;
+        }
+
+
+        /*div*/%#{$sagovau-namespace}article__content,
+        /*div*/.#{$sagovau-namespace}article__content {
+            background: none;
+        }
+
+
+            /*div*/%#{$sagovau-namespace}article__body,
+            /*div*/.#{$sagovau-namespace}article__body {
+                padding: $sagovau-spacing-unit-base;
+            }
+
+
+                /*h2, h3*/%#{$sagovau-namespace}article__title,
+                /*h2, h3*/.#{$sagovau-namespace}article__title {
+                    @extend %#{$sagovau-namespace}beta;
+                    margin-bottom: 0;
+                    padding: $sagovau-spacing-unit-base 0;
+                    text-decoration: inherit; // Make sure heading is underlined on hover/focus
+                }
+
+
+    // Mark the article as loaded
+
+    $sagovau-article-loaded: true; /* [3] */
+
+}

@@ -1,0 +1,21 @@
+/*------------------------------------*\
+    #PAGE-INTRO
+\*------------------------------------*/
+
+
+/*div*/.#{$sagovau-namespace}page-intro {
+    text-align: center;
+    padding: 1em;
+
+    @include media-query(large-and-up) {
+        padding: 5rem;
+    }
+}
+
+    /*h2*/.#{$sagovau-namespace}page-intro__title {
+        @extend %#{$sagovau-namespace}beta;
+    }
+
+/*div*/.#{$sagovau-namespace}page-intro__content {
+
+}

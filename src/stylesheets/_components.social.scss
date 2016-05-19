@@ -1,0 +1,62 @@
+/*------------------------------------*\
+    #SOCIAL
+\*------------------------------------*/
+
+/**
+ * Styling for the S3 site header social icons.
+ */
+
+
+/*div*/.#{$sagovau-namespace}social {
+    color: $sagovau-color-text-base;
+    display: none;
+    vertical-align: middle;
+
+    @media screen and (min-width: 1060px) {
+        display: block;
+    }
+}
+
+    /*ul*/.#{$sagovau-namespace}social__list {
+        @extend %#{$sagovau-namespace}list-inline;
+        margin: 0 20px;
+        display: none;
+
+        @media screen and (min-width: 1060px) {
+            display: block;
+        }
+    }
+
+
+        /*li*/.#{$sagovau-namespace}social__item {
+            padding: 0 0.2em;
+
+            &--delimited {
+
+                &::before {
+                    content: '|';
+                    padding: 0 0.4em 0 0;
+                }
+            }
+        }
+
+            /*a*/.#{$sagovau-namespace}social__link {
+                @include ui-link;
+
+                color: inherit;
+
+                .sprite {
+                    display: inline-block;
+                    height: 30px;
+                    width: 30px;
+                }
+            }
+
+                /*img, svg*/.#{$sagovau-namespace}social__icon {
+                    fill: currentColor;
+                    vertical-align: middle;
+                }
+
+                /*img, svg*/.#{$sagovau-namespace}social__icon--round {
+                    border-radius: 50%;
+                }

@@ -1,0 +1,26 @@
+{% extends 'layouts/master.html' %}
+
+{% set hero_title = 'Trip essentials' %}
+{% set hero_image = 'upload/hero/trip-essentials.jpg' %}
+{% set page_intro_title = 'Trip preparation' %}
+{% set page_intro_text = '<p>A little research and planning can transform the Kangaroo Island Wilderness Trail from a great walk into the walk of a lifetime.</p>' %}
+
+
+
+
+{% block content %}
+
+    {% include "shared/page-intro.html" %}
+
+    {% include "shared/article-card.html" %}
+
+{% endblock %}
+
+
+
+
+
+
+{% block javascript %}
+    {{ super() }}
+{% endblock %}

@@ -1,0 +1,70 @@
+/*------------------------------------*\
+    #HEADINGS
+\*------------------------------------*/
+
+/**
+ * Basic heading styles
+ **/
+
+
+h1,
+%alpha {
+    @include responsive-font(5vw, 35px, 75px, 50px);
+    color: $sagovau-color-text-base;
+    font-family: $sagovau-font-family-highlight;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: -0.02em;
+    text-transform: none;
+}
+
+h2,
+%beta {
+    @include responsive-font(5vw, 30px, 42px, 42px);
+    color: $sagovau-color-text-base;
+    font-family: $sagovau-font-family-highlight;
+    font-weight: 200;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+    text-transform: none;
+}
+
+h3,
+%gamma {
+    @include responsive-font(5vw, 18px, 22px, 22px);
+    color: $sagovau-color-text-base;
+    font-family: $sagovau-font-family-highlight;
+    line-height: 1.5;
+    font-weight: 700;
+    text-transform: none;
+}
+
+h4,
+%delta {
+    color: $sagovau-color-text-base;
+    @include responsive-font(5vw, 18px, 22px, 22px);
+    font-family: $sagovau-font-family-highlight;
+    line-height: 1.5;
+    font-weight: 700;
+    text-transform: none;
+}
+
+h5,
+%epsilon {
+    @include responsive-font(5vw, 17px, 21px, 21px);
+    color: $sagovau-color-text-base;
+    font-family: $sagovau-font-family-highlight;
+    line-height: 1.5;
+    font-weight: 400;
+    text-transform: none;
+}
+
+h6,
+%zeta {
+    @include responsive-font(5vw, 16px, 21px, 20px);
+    color: $sagovau-color-text-base;
+    font-family: $sagovau-font-family-highlight;
+    line-height: 1.5;
+    font-weight: 400;
+    text-transform: none;
+}

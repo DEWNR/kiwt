@@ -5,4 +5,95 @@
 
 /*header*/.#{$sagovau-namespace}global-header {
     background: #545454;
+    box-shadow: 0 -2px 35px rgba(0, 0, 0, 0.8);
+    padding: 9px 0;
+    position: relative;
+    z-index: 150;
+    font-family: "Frutiger W01", serif, Helvetica, Arial, sans-serif;
+
+    .wrapper {
+        align-items: center;
+        display: flex;
+    }
 }
+
+
+    /*a*/.#{$sagovau-namespace}global-header__logotype {
+        margin: 0 20px;
+        width: 266px;
+
+        @include media-query(huge) {
+            margin-left: 0;
+        }
+
+        img {
+            display: block;
+            margin-top: -5px;
+        }
+    }
+
+
+    /*nav*/.#{$sagovau-namespace}global-header__navigation {
+        margin: 0 20px;
+        display: none;
+
+        @media screen and (min-width: 1060px) {
+            display: block;
+        }
+
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            border-left: 1px solid #fff;
+            display: inline-block;
+            margin: 0 -4px 0 0;
+            padding: 0;
+
+            &:first-child {
+                border-left: 0;
+            }
+        }
+
+        a {
+            color: #fff;
+            text-decoration: none;
+            padding: 0.5em 1.2em;
+        }
+    }
+
+
+    /*div*/.#{$sagovau-namespace}global-header__search {
+        display: none;
+        flex: 1;
+        margin: 0 20px;
+
+        @media screen and (min-width: 1060px) {
+            display: block;
+            margin-right: 0;
+        }
+    }
+
+        /*input*/input[type="search"].#{$sagovau-namespace}global-header__search-input {
+            background: #686868;
+            border: 1px solid #686868;
+            border-radius: 4px;
+            box-sizing: border-box;
+            color: #fff;
+            padding: 0.5em 1em;
+            transition: border $sagovau-transition-time ease-in-out;
+            width: 100%;
+
+            &::placeholder {
+                color: #fff;
+                font-style: italic;
+            }
+
+            &:focus {
+                border-color: #fff;
+                outline: 0;
+            }
+        }

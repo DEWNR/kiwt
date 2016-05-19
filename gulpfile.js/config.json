@@ -27,8 +27,11 @@
               "source": ["src/javascripts/modernizr.custom.45448.js", "src/javascripts/S3-enhance.js"],
               "filename": "S3-enhance.js"
           },{
-            "source": ["src/javascripts/S3-slider.js"],
-            "filename": "S3-slider.js"
+            "source": ["src/javascripts/color-thief.js"],
+            "filename": "color-thief.js"
+          },{
+            "source": ["src/javascripts/jquery.columnizer.js"],
+            "filename": "jquery.columnizer.js"
           }
       ],
       "extensions": ["js"]

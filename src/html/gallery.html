@@ -1,0 +1,45 @@
+{% extends 'layouts/master.html' %}
+
+{% set hero_title = 'Gallery' %}
+{% set hero_image = 'upload/hero/gallery.jpg' %}
+
+
+
+
+
+{% block content %}
+
+    <article class="article">
+
+        <div class="masonry">
+            <div class="item"><img src="images/upload/gallery/GH1.jpg" /></div>
+            <div class="item"><img src="images/upload/gallery/GV1.jpg" /></div>
+            <div class="item"><img src="images/upload/gallery/GH2.jpg" /></div>
+            <div class="item"><img src="images/upload/gallery/GV2.jpg" /></div>
+            <div class="item"><img src="images/upload/gallery/GH3.jpg" /></div>
+            <div class="item"><img src="images/upload/gallery/GH7.jpg" /></div>
+            <div class="item"><img src="images/upload/gallery/GV3.jpg" /></div>
+            <div class="item"><img src="images/upload/gallery/GH4.jpg" /></div>
+            <div class="item"><img src="images/upload/gallery/GV4.jpg" /></div>
+            <div class="item"><img src="images/upload/gallery/GH5.jpg" /></div>
+            <div class="item"><img src="images/upload/gallery/GV5.jpg" /></div>
+            <div class="item"><img src="images/upload/gallery/GH6.jpg" /></div>
+            <div class="item"><img src="images/upload/gallery/GV6.jpg" /></div>
+            <div class="item"><img src="images/upload/gallery/GV7.jpg" /></div>
+            <div class="item"><img src="images/upload/gallery/GH8.jpg" /></div>
+            <div class="item"><img src="images/upload/gallery/GV8.jpg" /></div>
+            <div class="item"><img src="images/upload/gallery/GV9.jpg" /></div>
+        </div>
+
+    </article>
+
+{% endblock %}
+
+
+
+
+
+
+{% block javascript %}
+    {{ super() }}
+{% endblock %}

@@ -1,75 +1,63 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <title></title>
+{% extends 'layouts/home.html' %}
 
-        <link href="css/main.css" rel="stylesheet">
-    </head>
-    <body>
-
-        <div class="global-header">
-            <div class="wrapper">
-                <img src="http://placehold.it/200x50" alt="" />
-            </div>
-        </div>
+{% set hero_title = 'Kangaroo Island<span> </span>Wilderness Trail' %}
+{% set hero_image = 'upload/hero/home.jpg' %}
+{% set page_intro_title = 'One of Australia\'s great walks.' %}
+{% set page_intro_text = '<p>Nature\'s drama unfolds at every step of the 66 kilometre five-day trek, with the trail weaving its way through the most botanically unique area in all of South Australia before reaching the rugged, remote and spectacular coastline of the Southern Ocean. </p><p>The unimaginable beauty of this area of the world has to be seen to be believed. Come and discover the magic for yourself.</p>' %}
 
 
 
-        <div class="site-header" style="background-image: url(images/book.jpg);">
 
-            <div class="site-header__navigation">
 
-            </div>
+{% block content %}
 
-            <div class="site-header__banner">
+    <div class="page-intro">
 
-                <h1 class="site-header__title">Kangaroo Island Wilderness Trail</h1>
-                <a href="#">
+        <div class="wrapper">
 
+            <h2 class="page-intro__title">{{ page_intro_title }}</h2>
+
+            <div class="page-intro__content">
+                {{ page_intro_text }}
             </div>
 
-        </div>
+            <ul class="icon-list">
 
+                <li>
+                    <img class="icon-list__icon  icon-list__icon--location" src="images/kiwt-icon-location.svg" alt="">
+                    <strong>Location</strong>
+                    South-west
+                    Kangaroo Island
+                </li>
+                <li>
+                    <img class="icon-list__icon  icon-list__icon--distance" src="images/kiwt-icon-distance.svg" alt="">
+                    <strong>Distance / Time</strong>
+                    66km / 5 Days
+                </li>
+                <li>
+                    <img class="icon-list__icon  icon-list__icon--difficulty" src="images/kiwt-icon-difficulty.svg" alt="">
+                    <strong>Difficulty</strong>
+                    Easy to moderate
+                </li>
+                <li>
+                    <img class="icon-list__icon  icon-list__icon--calendar" src="images/kiwt-icon-calendar.svg" alt="">
+                    <strong>Best time to go</strong>
+                    September until April
+                </li>
 
-
-        <div class="card-module__wrap">
-
-
-            <div class="card-module">
-
-                <div class="card-module__image-wrap">
-                  <div class="card-module__image" style="background-image: url(http://placehold.it/400x150)"></div>
-                </div>
-
-                <div class="card-module__content">
-                    <h2 class="card-module__title">Lorem ipsum dolor sit amet</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea ipsum sit perspiciatis iusto commodi nihil tenetur veritatis adipisci sed? Illo nobis similique in facilis libero ab officia ratione nesciunt fugiat.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea ipsum sit perspiciatis iusto commodi nihil tenetur veritatis adipisci sed? Illo nobis similique in facilis libero ab officia ratione nesciunt fugiat.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea ipsum sit perspiciatis iusto commodi nihil tenetur veritatis adipisci sed? Illo nobis similique in facilis libero ab officia ratione nesciunt fugiat.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea ipsum sit perspiciatis iusto commodi nihil tenetur veritatis adipisci sed? Illo nobis similique in facilis libero ab officia ratione nesciunt fugiat.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea ipsum sit perspiciatis iusto commodi nihil tenetur veritatis adipisci sed? Illo nobis similique in facilis libero ab officia ratione nesciunt fugiat.</p>
-                </div>
-
-            </div>
-
-
-            <div class="card-module  card-module--reversed">
-
-                <div class="card-module__image-wrap">
-                  <div class="card-module__image" style="background-image: url(http://placehold.it/400x150)"></div>
-                </div>
-
-                <div class="card-module__content">
-                  <h2 class="card-module__title">Lorem ipsum dolor sit amet</h2>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea ipsum sit perspiciatis iusto commodi nihil tenetur veritatis adipisci sed? Illo nobis similique in facilis libero ab officia ratione nesciunt fugiat.</p>
-                </div>
-
-            </div>
-
+            </ul>
 
         </div>
 
+    </div>
 
-    </body>
-</html>
+{% endblock %}
+
+
+
+
+
+
+{% block javascript %}
+    {{ super() }}
+{% endblock %}

@@ -1,0 +1,58 @@
+/*------------------------------------*\
+    #DEWNRGER
+\*------------------------------------*/
+
+/**
+ * DEWNR's own customised version of Frutiger
+ */
+
+$sagovau-path-fonts: '/fonts/';
+
+
+
+@font-face {
+    font-family: Dewnrger;
+    font-style: normal;
+    font-weight: 200;
+    src: url(#{$sagovau-path-fonts}Dewnrger45Light.ttf);
+}
+
+
+@font-face {
+    font-family: Dewnrger;
+    font-style: italic;
+    font-weight: 200;
+    src: url(#{$sagovau-path-fonts}Dewnrger46LightItalic.ttf);
+}
+
+
+@font-face {
+    font-family: Dewnrger;
+    font-style: normal;
+    font-weight: 400;
+    src: url(#{$sagovau-path-fonts}Dewnrger55Roman.ttf);
+}
+
+
+@font-face {
+    font-family: Dewnrger;
+    font-style: italic;
+    font-weight: 400;
+    src: url(#{$sagovau-path-fonts}Dewnrger56Italic.ttf);
+}
+
+
+@font-face {
+    font-family: Dewnrger;
+    font-style: normal;
+    font-weight: 700;
+    src: url(#{$sagovau-path-fonts}Dewnrger65Bold.ttf);
+}
+
+
+@font-face {
+    font-family: Dewnrger;
+    font-style: italic;
+    font-weight: 700;
+    src: url(#{$sagovau-path-fonts}Dewnrger66BoldItalic.ttf);
+}

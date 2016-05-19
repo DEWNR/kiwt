@@ -1,0 +1,85 @@
+/*------------------------------------*\
+    #SITE-HERO
+\*------------------------------------*/
+
+
+/*div*/.#{$sagovau-namespace}site-hero {
+    background-position: 0 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    // position: fixed;
+    // top: 0;
+    // bottom: 0;
+    // left: 0;
+    // right: 0;
+    // z-index: 1;
+
+    @include media-query(large-and-up) {
+        background-position: 50%;
+        padding-bottom: percentage(505 / 1270);
+        height: 0;
+    }
+}
+
+/*h1*/.#{$sagovau-namespace}site-hero__title {
+    @extend %#{$sagovau-namespace}alpha;
+    color: #fff;
+    margin: 0 auto;
+    line-height: 1.1;
+    font-weight: bold;
+
+    span {
+        display: block;
+    }
+}
+
+
+/*a*/.#{$sagovau-namespace}site-hero__button {
+    border: 2px solid #fff;
+    border-radius: 8px;
+    color: #fff;
+    display: inline-block;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 1;
+    padding: 1em 1em 0.8em;
+    margin-top: 1em;
+    position: relative;
+    text-decoration: none;
+    transition: background $sagovau-transition-time ease-in-out, color $sagovau-transition-time ease-in-out;
+
+    &:hover {
+        // background: #fff;
+        // color: #f2991d;
+    }
+}
+
+
+/*div*/.#{$sagovau-namespace}site-hero__content {
+    // position: absolute;
+    // top: 0;
+    // right: 0;
+    // bottom: 0;
+    // left: 0;
+    // align-items: center;
+    // display: flex;
+    padding-top: percentage(225 / 1270);
+    padding-bottom: percentage(225 / 1270);
+
+    @include media-query(small-and-up) {
+        padding-top: percentage(375 / 1270);
+    }
+
+    @include media-query(large-and-up) {
+        padding-top: percentage(225 / 1270);
+    }
+}
+
+.content {
+    // position: absolute;
+    z-index: 140;
+    background: #fff;
+    // top: 556px;
+    width: 100%;
+}

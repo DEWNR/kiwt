@@ -1,0 +1,27 @@
+{% extends 'layouts/master.html' %}
+
+{% set hero_title = 'Internal Example' %}
+{% set hero_image = 'upload/hero/faq.jpg' %}
+
+
+
+
+
+{% block content %}
+
+    <article class="article">
+
+        {% include "shared/lorem.html" %}
+
+    </article>
+
+{% endblock %}
+
+
+
+
+
+
+{% block javascript %}
+    {{ super() }}
+{% endblock %}

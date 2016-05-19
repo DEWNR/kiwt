@@ -1,0 +1,22 @@
+/*------------------------------------*\
+    #WRAPPER
+\*------------------------------------*/
+
+
+.#{$sagovau-namespace}wrapper,
+%#{$sagovau-namespace}wrapper {
+    margin: {
+        left: auto;
+        right: auto;
+    }
+    max-width: $sagovau-max-width;
+}
+
+.#{$sagovau-namespace}wrapper--large,
+%#{$sagovau-namespace}wrapper--large {
+    margin: {
+        left: auto;
+        right: auto;
+    }
+    max-width: $sagovau-max-width--large;
+}

@@ -1,0 +1,26 @@
+{% extends 'layouts/master.html' %}
+
+{% set hero_title = 'Nature and history' %}
+{% set hero_image = 'upload/hero/nature-history.jpg' %}
+{% set page_intro_title = 'A journey of abundance' %}
+{% set page_intro_text = '<p>With its dense bushland, soaring cliffs, untouched white sandy beaches and pristine rivers and lagoons, the Kangaroo Island Wilderness Trail provides walkers with a front row seat to some of the island’s most iconic natural and historical attractions.</p>' %}
+
+
+
+
+{% block content %}
+
+    {% include "shared/page-intro.html" %}
+
+    {% include "shared/article-card--grid.html" %}
+
+{% endblock %}
+
+
+
+
+
+
+{% block javascript %}
+    {{ super() }}
+{% endblock %}

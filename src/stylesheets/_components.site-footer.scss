@@ -1,0 +1,32 @@
+/*------------------------------------*\
+    #GLOBAL-HEADER
+\*------------------------------------*/
+
+
+/*footer*/.#{$sagovau-namespace}site-footer {
+    background: $sagovau-color-text-base;
+    text-align: center;
+    padding: 20px 0;
+}
+
+    /*div*/.#{$sagovau-namespace}site-footer__logos {
+        padding: $sagovau-spacing-unit-base $sagovau-spacing-unit-base 0;
+    }
+
+        /*a*/.#{$sagovau-namespace}site-footer__logo {
+            margin: 0 0 $sagovau-spacing-unit-base;
+            display: block;
+            min-width: 152px;
+        }
+
+
+    /*p*/.#{$sagovau-namespace}site-footer__copyright {
+        color: #2e2925;
+        margin: 0;
+        padding: $sagovau-spacing-unit-base;
+
+        a {
+            color: #2e2925;
+            text-decoration: none;
+        }
+    }

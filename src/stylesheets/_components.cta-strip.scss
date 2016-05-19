@@ -1,0 +1,53 @@
+/*------------------------------------*\
+    #CTA-STRIP
+\*------------------------------------*/
+
+
+/*div*/.#{$sagovau-namespace}cta-strip {
+    background: #f2991d;
+    text-align: center;
+    padding: $sagovau-spacing-unit-base / 2 1em;
+}
+
+
+/*a*/.#{$sagovau-namespace}cta-strip__button {
+    @extend %zeta;
+    border: 2px solid #fff;
+    border-radius: 8px;
+    color: #fff;
+    display: inline-block;
+    line-height: 1;
+    padding: 1em 50px 0.8em 20px;
+    position: relative;
+    text-decoration: none;
+    transition: background $sagovau-transition-time ease-in-out, color $sagovau-transition-time ease-in-out;
+
+    @include media-query(large-and-up) {
+        padding: 1em 60px 0.8em 40px;
+    }
+
+    &:hover {
+        background: #fff;
+        color: #f2991d;
+    }
+}
+
+
+/*svg*/.#{$sagovau-namespace}cta-strip__icon {
+    fill: #fff;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    margin-top: -10px;
+    transition: fill $sagovau-transition-time ease-in-out;
+    width: 18px;
+
+    @include media-query(large-and-up) {
+        width: 28px;
+        margin-top: -14px;
+    }
+
+    /*a*/.#{$sagovau-namespace}cta-strip__button:hover & {
+        fill: #f2991d;
+    }
+}
