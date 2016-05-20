@@ -2,7 +2,6 @@ var bAllowBookings = true;
 var bookeasyData = {};
 var bookeasyType = 'accom'; // defaults to accomodation
 var bookingDate = new Date(); // get today's date
-// var operatorIDs = productID = [75605]; // set operatorIDs to display
 var operatorIDs = productID = [80122]; // set operatorIDs to display
 var operatorIDString = operatorIDs.join(); // create a string for the JSONP request
 var operatorPageType = 'tours'; // type of operator
@@ -25,6 +24,12 @@ $(function() {
         showQuantity: false,
         thumbsInGrid: true,
         type: bookeasyType,
+        noAdults: 10,
+        noChildren: 10,
+        noStudents: 10,
+        noConcessions: 10,
+        noInfants: 0,
+        noObservers: 0,
         vcID: 188
     });
 

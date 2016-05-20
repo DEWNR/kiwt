@@ -5,3 +5,10 @@
 html {
     line-height: 1.8;
 }
+
+
+div.embedded-search div.search-gadget.BE div.infants,
+div.embedded-search div.search-gadget.BE div.observers,
+div#wdOverlayContent div.add-to-cart-form div.quantity {
+    display: none!important;
+}

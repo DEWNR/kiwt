@@ -1,0 +1,37 @@
+{% extends 'layouts/master.html' %}
+
+{% set hero_title = 'Internal Example' %}
+{% set hero_image = 'upload/hero/faq.jpg' %}
+
+
+
+
+
+{% block content %}
+
+    <article class="article">
+
+        <div id="bookeasy__booking-gadget"></div>
+
+    </article>
+
+{% endblock %}
+
+
+
+
+
+
+{% block javascript %}
+    {{ super() }}
+{% endblock %}
+
+
+
+
+
+{% block local_javascript %}
+    <script src="//gadgets.impartmedia.com/gadgets.jsz"></script>
+
+    <script src="js/bookeasy-booking.js" inline></script>
+{% endblock %}
