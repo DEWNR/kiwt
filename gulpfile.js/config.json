@@ -21,11 +21,11 @@
       "dest": "js",
       "files": [
           {
-            "source": ["src/javascripts/S3-prepare.js"],
-            "filename": "S3-prepare.js"
+            "source": ["src/javascripts/bookeasy-cart.js"],
+            "filename": "bookeasy-cart.js"
           },{
-              "source": ["src/javascripts/modernizr.custom.45448.js", "src/javascripts/S3-enhance.js"],
-              "filename": "S3-enhance.js"
+              "source": ["src/javascripts/bookeasy-details.js"],
+              "filename": "bookeasy-details.js"
           },{
             "source": ["src/javascripts/color-thief.js"],
             "filename": "color-thief.js"
