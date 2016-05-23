@@ -1,0 +1,79 @@
+/*------------------------------------*\
+    #TABS
+\*------------------------------------*/
+
+
+/*div*/.#{$sagovau-namespace}tabs {
+}
+
+/*div*/.#{$sagovau-namespace}tablist {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+    margin-bottom: $sagovau-spacing-unit-base * 2;
+    display: flex;
+
+    li {
+        flex: 1;
+        text-align: center;
+    }
+}
+
+/*a*/.#{$sagovau-namespace}tablist__tab {
+    @include responsive-font(5vw, 30px, 42px, 42px);
+    background: #e8e8e8;
+    color: $sagovau-color-text-base;
+    display: block;
+    text-decoration: none;
+    font-family: $sagovau-font-family-highlight;
+    font-weight: 200;
+    padding: 0.2em 0 0;
+
+    &:hover,
+    &:focus {
+        background: darken(#e8e8e8, 10%);
+        color: $sagovau-color-text-base;
+        outline: 0;
+    }
+
+    &.selected,
+    &[aria-selected='true'] {
+        background: $sagovau-color-brand;
+        color: #fff;
+    }
+}
+
+
+/*div*/.#{$sagovau-namespace}tabpanel {
+    overflow: hidden;
+    display: flex;
+}
+
+
+/*div*/.#{$sagovau-namespace}tabpanel__content {
+    flex: 1;
+    order: 2;
+    padding: 0 $sagovau-spacing-unit-base * 2;
+}
+
+
+/*div*/.#{$sagovau-namespace}tabpanel__images {
+    flex: 1;
+    order: 1;
+
+    img {
+        display: block;
+    }
+}
+
+
+/*div*/.#{$sagovau-namespace}tabpanel__title {
+    text-align: center;
+    margin: 0 0 $sagovau-spacing-unit-base * 1.5;
+}
+
+
+[aria-hidden='true'] {
+    display: none;
+}

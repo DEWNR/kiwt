@@ -2,6 +2,8 @@
 
 {% set hero_title = 'The Experience' %}
 {% set hero_image = 'upload/hero/experiences.jpg' %}
+{% set page_intro_title = 'Five days, the experience of a lifetime' %}
+{% set page_intro_text = '<p>Towering cliffs of limestone and coagulated magma, storm-blasted coastal scrub and massive arcs of bone white beach; this is the wildness that awaits you on the Kangaroo Island Wilderness Trail.</p><p>Few places in the world remain that provide such a setting for inner, deep listening and quiet, still awareness. Look around you and within – the opportunities for discovery are endless.</p>' %}
 
 
 
@@ -9,9 +11,185 @@
 
 {% block content %}
 
+    {% include "shared/page-intro.html" %}
+
     <article class="article">
 
-        {% include "shared/lorem.html" %}
+
+        <ul role="tablist" class="tablist">
+          <li><a role="tab" aria-controls="day-1" class="tablist__tab" href="#day-1">Day 1</a></li>
+          <li><a role="tab" aria-controls="day-2" class="tablist__tab" href="#day-2">Day 2</a></li>
+          <li><a role="tab" aria-controls="day-3" class="tablist__tab" href="#day-3">Day 3</a></li>
+          <li><a role="tab" aria-controls="day-4" class="tablist__tab" href="#day-4">Day 4</a></li>
+          <li><a role="tab" aria-controls="day-5" class="tablist__tab" href="#day-5">Day 5</a></li>
+        </ul>
+
+
+        <div role="tabpanel" class="tabpanel" id="day-1">
+
+            <div class="tabpanel__content">
+
+                <h2 class="tabpanel__title">Rocky River to Snake Lagoon</h2>
+
+                <ul class="icon-list">
+
+                    <li>
+                        <img class="icon-list__icon  icon-list__icon--distance" src="images/kiwt-icon-distance.svg" alt="">
+                        <strong>Distance / Time</strong>
+                        11.3 km / 4 hrs
+                    </li>
+                    <li>
+                        <img class="icon-list__icon  icon-list__icon--difficulty" src="images/kiwt-icon-difficulty.svg" alt="">
+                        <strong>Difficulty</strong>
+                        Easy
+                    </li>
+
+                </ul>
+
+                <p>Day one commences at the Flinders Chase Visitor Centre and takes you to the famous Rocky River Platypus Waterholes where you may encounter the rare and iconic platypus. This shared section of the trail has plenty of interpretation and offers a great introduction to the park. When the path joins up with the Rocky River Trail you’ll be immersed in dense eucalypt woodland teeming with bird life and native animals. Reaching a lookout you will see the meandering Rocky River far below you as it flows out towards the Southern Ocean. You will then pass through riverbank and mallee habitats where wildflowers provide stunning arrays of colour all year around, along with a profusion of orchids and fungi in the cooler months. Traversing your way down from the ridge towards the river you will come across the spectacular sight of the Rocky River Cascades. The day comes to a close at the Cup Gum campsite, a peaceful setting for your first night’s rest hidden amongst sugar gums and ancient old growth cup gums.</p>
+
+            </div>
+
+            <div class="tabpanel__images">
+                <img src="http://placehold.it/520x310">
+                <img src="http://placehold.it/520x310">
+            </div>
+
+        </div>
+
+
+        <div role="tabpanel" class="tabpanel" id="day-2">
+
+            <div class="tabpanel__content">
+
+                <h2 class="tabpanel__title">Rocky River to Snake Lagoon 2</h2>
+
+                <ul class="icon-list">
+
+                    <li>
+                        <img class="icon-list__icon  icon-list__icon--distance" src="images/kiwt-icon-distance.svg" alt="">
+                        <strong>Distance / Time</strong>
+                        11.3 km / 4 hrs
+                    </li>
+                    <li>
+                        <img class="icon-list__icon  icon-list__icon--difficulty" src="images/kiwt-icon-difficulty.svg" alt="">
+                        <strong>Difficulty</strong>
+                        Easy
+                    </li>
+
+                </ul>
+
+                <p>Day one commences at the Flinders Chase Visitor Centre and takes you to the famous Rocky River Platypus Waterholes where you may encounter the rare and iconic platypus. This shared section of the trail has plenty of interpretation and offers a great introduction to the park. When the path joins up with the Rocky River Trail you’ll be immersed in dense eucalypt woodland teeming with bird life and native animals. Reaching a lookout you will see the meandering Rocky River far below you as it flows out towards the Southern Ocean. You will then pass through riverbank and mallee habitats where wildflowers provide stunning arrays of colour all year around, along with a profusion of orchids and fungi in the cooler months. Traversing your way down from the ridge towards the river you will come across the spectacular sight of the Rocky River Cascades. The day comes to a close at the Cup Gum campsite, a peaceful setting for your first night’s rest hidden amongst sugar gums and ancient old growth cup gums.</p>
+
+            </div>
+
+            <div class="tabpanel__images">
+                <img src="http://placehold.it/520x310">
+                <img src="http://placehold.it/520x310">
+            </div>
+
+        </div>
+
+
+        <div role="tabpanel" class="tabpanel" id="day-3">
+
+            <div class="tabpanel__content">
+
+                <h2 class="tabpanel__title">Rocky River to Snake Lagoon 3</h2>
+
+                <ul class="icon-list">
+
+                    <li>
+                        <img class="icon-list__icon  icon-list__icon--distance" src="images/kiwt-icon-distance.svg" alt="">
+                        <strong>Distance / Time</strong>
+                        11.3 km / 4 hrs
+                    </li>
+                    <li>
+                        <img class="icon-list__icon  icon-list__icon--difficulty" src="images/kiwt-icon-difficulty.svg" alt="">
+                        <strong>Difficulty</strong>
+                        Easy
+                    </li>
+
+                </ul>
+
+                <p>Day one commences at the Flinders Chase Visitor Centre and takes you to the famous Rocky River Platypus Waterholes where you may encounter the rare and iconic platypus. This shared section of the trail has plenty of interpretation and offers a great introduction to the park. When the path joins up with the Rocky River Trail you’ll be immersed in dense eucalypt woodland teeming with bird life and native animals. Reaching a lookout you will see the meandering Rocky River far below you as it flows out towards the Southern Ocean. You will then pass through riverbank and mallee habitats where wildflowers provide stunning arrays of colour all year around, along with a profusion of orchids and fungi in the cooler months. Traversing your way down from the ridge towards the river you will come across the spectacular sight of the Rocky River Cascades. The day comes to a close at the Cup Gum campsite, a peaceful setting for your first night’s rest hidden amongst sugar gums and ancient old growth cup gums.</p>
+
+            </div>
+
+            <div class="tabpanel__images">
+                <img src="http://placehold.it/520x310">
+                <img src="http://placehold.it/520x310">
+            </div>
+
+        </div>
+
+
+        <div role="tabpanel" class="tabpanel" id="day-4">
+
+            <div class="tabpanel__content">
+
+                <h2 class="tabpanel__title">Rocky River to Snake Lagoon 4</h2>
+
+                <ul class="icon-list">
+
+                    <li>
+                        <img class="icon-list__icon  icon-list__icon--distance" src="images/kiwt-icon-distance.svg" alt="">
+                        <strong>Distance / Time</strong>
+                        11.3 km / 4 hrs
+                    </li>
+                    <li>
+                        <img class="icon-list__icon  icon-list__icon--difficulty" src="images/kiwt-icon-difficulty.svg" alt="">
+                        <strong>Difficulty</strong>
+                        Easy
+                    </li>
+
+                </ul>
+
+                <p>Day one commences at the Flinders Chase Visitor Centre and takes you to the famous Rocky River Platypus Waterholes where you may encounter the rare and iconic platypus. This shared section of the trail has plenty of interpretation and offers a great introduction to the park. When the path joins up with the Rocky River Trail you’ll be immersed in dense eucalypt woodland teeming with bird life and native animals. Reaching a lookout you will see the meandering Rocky River far below you as it flows out towards the Southern Ocean. You will then pass through riverbank and mallee habitats where wildflowers provide stunning arrays of colour all year around, along with a profusion of orchids and fungi in the cooler months. Traversing your way down from the ridge towards the river you will come across the spectacular sight of the Rocky River Cascades. The day comes to a close at the Cup Gum campsite, a peaceful setting for your first night’s rest hidden amongst sugar gums and ancient old growth cup gums.</p>
+
+            </div>
+
+            <div class="tabpanel__images">
+                <img src="http://placehold.it/520x310">
+                <img src="http://placehold.it/520x310">
+            </div>
+
+        </div>
+
+
+        <div role="tabpanel" class="tabpanel" id="day-5">
+
+            <div class="tabpanel__content">
+
+                <h2 class="tabpanel__title">Rocky River to Snake Lagoon 5</h2>
+
+                <ul class="icon-list">
+
+                    <li>
+                        <img class="icon-list__icon  icon-list__icon--distance" src="images/kiwt-icon-distance.svg" alt="">
+                        <strong>Distance / Time</strong>
+                        11.3 km / 4 hrs
+                    </li>
+                    <li>
+                        <img class="icon-list__icon  icon-list__icon--difficulty" src="images/kiwt-icon-difficulty.svg" alt="">
+                        <strong>Difficulty</strong>
+                        Easy
+                    </li>
+
+                </ul>
+
+                <p>Day one commences at the Flinders Chase Visitor Centre and takes you to the famous Rocky River Platypus Waterholes where you may encounter the rare and iconic platypus. This shared section of the trail has plenty of interpretation and offers a great introduction to the park. When the path joins up with the Rocky River Trail you’ll be immersed in dense eucalypt woodland teeming with bird life and native animals. Reaching a lookout you will see the meandering Rocky River far below you as it flows out towards the Southern Ocean. You will then pass through riverbank and mallee habitats where wildflowers provide stunning arrays of colour all year around, along with a profusion of orchids and fungi in the cooler months. Traversing your way down from the ridge towards the river you will come across the spectacular sight of the Rocky River Cascades. The day comes to a close at the Cup Gum campsite, a peaceful setting for your first night’s rest hidden amongst sugar gums and ancient old growth cup gums.</p>
+
+            </div>
+
+            <div class="tabpanel__images">
+                <img src="http://placehold.it/520x310">
+                <img src="http://placehold.it/520x310">
+            </div>
+
+        </div>
+
+
 
     </article>
 
@@ -23,4 +201,81 @@
 
 {% block javascript %}
     {{ super() }}
+{% endblock %}
+
+
+
+
+
+{% block local_javascript %}
+    <script>
+        /*global $*/
+
+        // a temp value to cache *what* we're about to show
+        var target = null;
+
+        // collect all the tabs
+        var tabs = $('.tablist__tab').on('click', function () {
+          console.log('click')
+          target = $(this.hash).removeAttr('id');
+          if (location.hash === this.hash) {
+            setTimeout(update);
+          }
+        }).attr('tabindex', '0');
+
+        // get an array of the panel ids (from the anchor hash)
+        var targets = tabs.map(function () {
+          return this.hash;
+        }).get();
+
+        // use those ids to get a jQuery collection of panels
+        var panels = $(targets.join(',')).each(function () {
+          // keep a copy of what the original el.id was
+          $(this).data('old-id', this.id);
+        });
+
+        function update() {
+          console.log('update')
+          if (target) {
+            target.attr('id', target.data('old-id'));
+            target = null;
+          }
+
+          var hash = window.location.hash;
+          if (targets.indexOf(hash) !== -1) {
+            return show(hash);
+          }
+
+          // NOTE: this was added after the article was written
+          // to fix going "back" on the browser nav to an empty state
+          if (!hash) {
+            show();
+          }
+        }
+
+        function show(id) {
+          // if no value was given, let's take the first panel
+          if (!id) {
+            id = targets[0];
+          }
+          // remove the selected class from the tabs,
+          // and add it back to the one the user selected
+          tabs.removeClass('selected').attr('aria-selected', 'false').filter(function () {
+            return (this.hash === id);
+          }).addClass('selected').attr('aria-selected', 'true');
+
+          // now hide all the panels, then filter to
+          // the one we're interested in, and show it
+          panels.hide().attr('aria-hidden', 'true').filter(id).show().attr('aria-hidden', 'false');
+        }
+
+        window.addEventListener('hashchange', update);
+
+        // initialise
+        if (targets.indexOf(window.location.hash) !== -1) {
+          update();
+        } else {
+          show();
+        }
+    </script>
 {% endblock %}

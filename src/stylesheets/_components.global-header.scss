@@ -4,7 +4,7 @@
 
 
 /*header*/.#{$sagovau-namespace}global-header {
-    background: #545454;
+    background: $sagovau-color-background-base;
     box-shadow: 0 -2px 35px rgba(0, 0, 0, 0.8);
     padding: 9px 0;
     position: relative;

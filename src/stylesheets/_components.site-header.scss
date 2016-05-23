@@ -9,6 +9,7 @@
     width: 100%;
     z-index: 145;
     box-shadow: 0 -2px 55px rgba(0, 0, 0, 0.3);
+    font-family: $sagovau-font-family-highlight;
 
     @include media-query(small-and-up) {
         position: absolute;
