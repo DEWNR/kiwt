@@ -13,9 +13,16 @@ $(window).scroll(function() {
 
 $(function() {
 
-    $(".fancybox").fancybox({
+    $('.fancybox').fancybox({
         openEffect: 'none',
         closeEffect: 'none'
+    });
+
+    $('.fancybox--video').fancybox({
+        openEffect: 'none',
+        closeEffect: 'none',
+        width: '70%',
+        height: '70%',
     });
 
 });
