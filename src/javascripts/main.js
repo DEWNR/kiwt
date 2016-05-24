@@ -9,3 +9,13 @@ $(window).scroll(function() {
         sh.removeClass('is-fixed');
     }
 });
+
+
+$(function() {
+
+    $(".fancybox").fancybox({
+        openEffect: 'none',
+        closeEffect: 'none'
+    });
+
+});
