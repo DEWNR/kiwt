@@ -22,6 +22,7 @@ $(function() {
     $('.fancybox--video').fancybox({
         openEffect: 'none',
         closeEffect: 'none',
+        type: 'iframe',
        'width': 16/9. * height,
        'height': height,
        'autoDimensions': false

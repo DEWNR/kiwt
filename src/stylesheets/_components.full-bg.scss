@@ -3,28 +3,46 @@
 \*------------------------------------*/
 
 /*div*/.#{$sagovau-namespace}full-bg {
-    height: 0;
-    padding-bottom: percentage(505 / 1270);
+    position: relative;
     background-position: 50%;
     background-size: cover;
     text-align: center;
 
-    &--map {
-        padding-bottom: percentage(615 / 1270);
+    &::before {
+        display: block;
+        content: '';
+        width: 100%;
+        padding-top: percentage(505 / 1270);
     }
+
+    &--map {
+        &::before {
+            padding-top: percentage(615 / 1270);
+        }
+    }
+}
+
+/*div*/.#{$sagovau-namespace}full-bg__content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
 }
 
 
 /*a*/.#{$sagovau-namespace}full-bg__link {
     @extend %beta;
     color: #fff;
-    display: inline-block;
     line-height: 1;
     padding: 1em 1em 0.8em 60px;
     text-decoration: none;
     text-transform: none;
     position: relative;
-    margin-top: percentage(200 / 1270);
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
 
 

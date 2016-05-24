@@ -21,6 +21,7 @@ $sagovau-navigation-tile-gradient-height: 2 * $sagovau-spacing-unit-base !defaul
 
 /*a*/.#{$sagovau-namespace}navigation-tile {
     @extend %#{$sagovau-namespace}module;
+    color: $sagovau-color-text-base;
     width: 50%;
     text-decoration: none;
 
