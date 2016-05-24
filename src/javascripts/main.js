@@ -1,4 +1,5 @@
 var sh = $('.site-header');
+var height = screen.height / 2;
 
 $(window).scroll(function() {
     // parallax();
@@ -21,8 +22,9 @@ $(function() {
     $('.fancybox--video').fancybox({
         openEffect: 'none',
         closeEffect: 'none',
-        width: '70%',
-        height: '70%',
+       'width': 16/9. * height,
+       'height': height,
+       'autoDimensions': false
     });
 
 });
