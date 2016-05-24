@@ -74,8 +74,6 @@
         <!-- jQuery -->
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-        <script src="js/jquery.columnizer.js"></script>
-        <script src="js/color-thief.js"></script>
 
         <!-- Local fallback -->
 
@@ -85,29 +83,8 @@
 
         <!-- End jQuery -->
 
-
-        <script>
-
-            var sh = $('.site-header');
-
-            $(window).scroll(function() {
-                // parallax();
-
-                if($(this).scrollTop() > 51) {
-                    sh.addClass('is-fixed');
-                } else {
-                    sh.removeClass('is-fixed');
-                }
-            });
-            //
-            // function parallax(){
-            //     var scrolled = $(window).scrollTop();
-            //     $('.site-hero').css('top',-(scrolled*0.0315)+'rem');
-            //     $('.site-hero__title').css('top',-(scrolled*-0.005)+'rem');
-            //     $('.site-hero__title').css('opacity',1-(scrolled*.00175));
-            // };
-
-        </script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
 
     {% endblock %}
 

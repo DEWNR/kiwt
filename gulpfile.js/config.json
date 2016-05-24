@@ -30,8 +30,11 @@
             "source": ["src/javascripts/color-thief.js"],
             "filename": "color-thief.js"
           },{
-            "source": ["src/javascripts/jquery.columnizer.js"],
-            "filename": "jquery.columnizer.js"
+            "source": ["./node_modules/jquery-fancybox/source/js/jquery.fancybox.js", "./node_modules/jquery-columnizer/src/jquery.columnizer.js"],
+            "filename": "plugins.js"
+          },{
+            "source": ["src/javascripts/main.js"],
+            "filename": "main.js"
           }
       ],
       "extensions": ["js"]
