@@ -5,7 +5,7 @@
 
 /*div*/.#{$sagovau-namespace}page-intro {
     text-align: center;
-    padding: 1em;
+    padding: 2em 1em 1em;
 
     @include media-query(large-and-up) {
         padding: 5rem;

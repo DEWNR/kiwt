@@ -4,26 +4,49 @@
 
 /*ul*/.#{$sagovau-namespace}icon-list {
     margin: 0;
-    padding: 3em 0 0;
+    padding: 1em 0 0;
     color: #026937;
     text-align: left;
+    text-align: center;
+
+    @include media-query(small-and-up) {
+        display: flex;
+        flex-direction: row;
+    }
 
     @include media-query(large-and-up) {
+        padding: 3em 0 0;
         text-align: center;
+    }
+
+    @include media-query(huge) {
+        margin: 0 auto;
+        width: 80%;
     }
 
     li {
         margin: 0;
-        padding: 0 2em 1em;
+        padding: 0 0.5em 1em;
         list-style: none;
         font-weight: 200;
-        display: inline-block;
+        display: block;
         line-height: 1;
+        text-align: left;
+
+        @include media-query(small-and-up) {
+            display: inline-block;
+            flex: 1;
+            text-align: center;
+        }
     }
 
     strong {
         font-weight: 700;
         margin-bottom: 0.4em;
+
+        @include media-query(small-and-up) {
+            display: block;
+        }
 
         @include media-query(large-and-up) {
             display: block;
@@ -36,22 +59,11 @@
 }
 
 /*img*/.#{$sagovau-namespace}icon-list__icon {
+    margin-right: 1em;
     margin-bottom: 0.8em;
 
-    // &--location {
-    //     width: 20px;
-    // }
-    //
-    // &--distance {
-    //     width: 50px;
-    // }
-    //
-    // &--difficulty {
-    //     width: 35px;
-    // }
-    //
-    // &--calendar {
-    //     width: 25px;
-    // }
+    @include media-query(large-and-up) {
+        margin-right: 0;
+    }
 
 }

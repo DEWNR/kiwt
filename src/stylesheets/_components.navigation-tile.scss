@@ -24,6 +24,7 @@ $sagovau-navigation-tile-gradient-height: 2 * $sagovau-spacing-unit-base !defaul
     color: $sagovau-color-text-base;
     width: 50%;
     text-decoration: none;
+    overflow: hidden;
 
     @include media-query(large-and-up) {
         width: 33.3333333%;
@@ -59,6 +60,12 @@ $sagovau-navigation-tile-gradient-height: 2 * $sagovau-spacing-unit-base !defaul
         background-repeat: no-repeat;
         background-size: cover;
         margin-bottom: -$sagovau-navigation-tile-gradient-height;
+        transform: scale(1, 1);
+        transition: all $sagovau-transition-time;
+
+        .#{$sagovau-namespace}navigation-tile:hover & {
+            transform: scale(1.2, 1.2);
+        }
     }
 
 
@@ -77,6 +84,11 @@ $sagovau-navigation-tile-gradient-height: 2 * $sagovau-spacing-unit-base !defaul
         background-position: 50% 0;
         padding: $sagovau-spacing-unit-base;
         position: relative;   /* [2] */
+        transition: all $sagovau-transition-time;
+
+        .#{$sagovau-namespace}navigation-tile:hover & {
+            background: #fff;
+        }
 
         > :last-child {
             margin-bottom: 0;
