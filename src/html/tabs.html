@@ -1,281 +1,344 @@
-{% extends 'layouts/master.html' %}
 
-{% set hero_title = 'The Experience' %}
-{% set hero_image = 'upload/hero/experiences.jpg' %}
-{% set page_intro_title = 'Five days, the experience of a lifetime' %}
-{% set page_intro_text = '<p>Towering cliffs of limestone and coagulated magma, storm-blasted coastal scrub and massive arcs of bone white beach; this is the wildness that awaits you on the Kangaroo Island Wilderness Trail.</p><p>Few places in the world remain that provide such a setting for inner, deep listening and quiet, still awareness. Look around you and within – the opportunities for discovery are endless.</p>' %}
-
+<!doctype html>
+<html>
+<head>
+	<!-- Published by Seamless.CMS.WebUI, 4.7.0.1 -->
 
 
+    <meta charset="utf-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>the-experience</title>
+	<meta name="generator" content="Seamless.CMS.WebUI - http://www.seamless.com.au" />
 
 
-{% block content %}
 
-    {% include "shared/page-intro.html" %}
+    <!-- Scripts -->
 
-    <article class="article">
+    <script type="text/javascript" src="//fast.fonts.net/jsapi/e0cc203f-7221-4daf-a2d5-815483dba107.js" async></script>
 
 
-        <ul role="tablist" class="tablist">
-          <li><a role="tab" aria-controls="day-1" class="tablist__tab" href="#day-1">Day 1</a></li>
-          <li><a role="tab" aria-controls="day-2" class="tablist__tab" href="#day-2">Day 2</a></li>
-          <li><a role="tab" aria-controls="day-3" class="tablist__tab" href="#day-3">Day 3</a></li>
-          <li><a role="tab" aria-controls="day-4" class="tablist__tab" href="#day-4">Day 4</a></li>
-          <li><a role="tab" aria-controls="day-5" class="tablist__tab" href="#day-5">Day 5</a></li>
+    <!-- Stylesheets -->
+
+    <link href="http://www.kangarooislandwildernesstrail.sa.gov.au//files/templates/00000000-0000-0000-0000-000000000000/2732a808-4d7f-431d-92ec-33245fb1e69c/main.css" rel="stylesheet">
+
+    <noscript>
+
+        <link type="text/css" rel="stylesheet" href="//fast.fonts.net/cssapi/e0cc203f-7221-4daf-a2d5-815483dba107.css">
+
+    </noscript>
+
+    <!-- End Stylesheets -->
+
+</head>
+<body>
+
+	<div class="site-wrap">
+
+		<div class="global-header">
+
+		    <div class="wrapper">
+
+		        <a class="global-header__logotype" href="#">
+		            <img src="http://www.kangarooislandwildernesstrail.sa.gov.au/files/templates/00000000-0000-0000-0000-000000000000/2732a808-4d7f-431d-92ec-33245fb1e69c/npsa-logotype.svg" alt="" />
+		        </a>
+
+		    </div><!-- /.wrapper -->
+
+		</div><!-- /.global-header -->
+
+
+		<div class="site-header">
+
+		    <div class="wrapper">
+
+		        <a class="site-header__logotype" href="/">Kangaroo Island Wilderness Trail</a>
+
+		        <nav class="site-header__navigation">
+	<ul><li class="site-header__navigation-item"><a href="http://www.kangarooislandwildernesstrail.sa.gov.au/trip-essentials">Trip essentials</a></li><li class="site-header__navigation-item"><a href="http://www.kangarooislandwildernesstrail.sa.gov.au/nature-and-history">Nature and history</a></li><li class="site-header__navigation-item"><a href="http://www.kangarooislandwildernesstrail.sa.gov.au/the-experience">Experience</a></li><li class="site-header__navigation-item  is-button"><a href="http://www.kangarooislandwildernesstrail.sa.gov.au/book">Book now</a></li></ul>
+</nav><!-- /.site-header__navigation -->
+
+
+				<ul class="social__list">
+
+				    <li class="social__item">
+
+				        Share
+
+				    </li><!-- /.social__item -->
+
+
+				    <li class="social__item">
+
+				        <a class="social__link" href="https://twitter.com/intent/tweet?url=http%3A%2F%2Fwww.kangarooislandwildernesstrail.sa.gov.au%2Fthe-experience" target="_blank">
+
+				        	<span class="u-visually-hidden">Share this page on Twitter</span>
+
+				            <svg class="social__icon  social__icon--round" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
+
+				                <path d="M0,0 L0,30 L30,30 L30,0 L0,0 L0,0 L0,0 L0,0 Z M22.5388889,11.7255556 C22.5455556,11.8877778 22.55,12.05 22.55,12.2144444 C22.55,17.21 18.7477778,22.97 11.7955556,22.97 C9.66,22.97 7.67333333,22.3455556 6,21.28 C6.29555556,21.3066667 6.59666667,21.3322222 6.90111111,21.3322222 C8.67333333,21.3322222 10.3033333,20.7277778 11.5966667,19.7133333 C9.94111111,19.6888889 8.54555556,18.5888889 8.06444444,17.0955556 C8.29555556,17.1388889 8.53111111,17.1644444 8.77555556,17.1644444 C9.12111111,17.1644444 9.45444444,17.1188889 9.77222222,17.0333333 C8.04222222,16.6866667 6.73888889,15.1577778 6.73888889,13.3255556 C6.73888889,13.3088889 6.73888889,13.2933333 6.74,13.2766667 C7.24888889,13.56 7.83222222,13.73 8.45222222,13.7511111 C7.43666667,13.06 6.76888889,11.9044444 6.76888889,10.5922222 C6.76888889,9.9 6.95555556,9.25 7.28111111,8.69222222 C9.14444444,10.9788889 11.9333333,12.4833333 15.0722222,12.6411111 C15.0066667,12.3644444 14.9733333,12.0766667 14.9733333,11.78 C14.9733333,9.69222222 16.6655556,8 18.7533333,8 C19.8411111,8 20.8133333,8.45888889 21.5077778,9.19333333 C22.3644444,9.02444444 23.1777778,8.70888889 23.9088889,8.27666667 C23.6233333,9.16 23.0266667,9.9 22.2455556,10.3677778 C23.01,10.2755556 23.7477778,10.0711111 24.4211111,9.77111111 C23.9177778,10.5255556 23.2766667,11.1922222 22.5388889,11.7255556" />
+
+				            </svg>
+
+				        </a>
+
+				    </li><!-- /.social__item -->
+
+
+				    <li class="social__item">
+
+				        <a class="social__link" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwww.kangarooislandwildernesstrail.sa.gov.au%2Fthe-experience" target="_blank">
+
+				        	<span class="u-visually-hidden">Share this page on Facebook</span>
+
+				            <svg class="social__icon  social__icon--round" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
+
+				                <path d="M0,0 L0,30 L30,30 L30,0 L0,0 Z M18.8,9.5 L17,9.5 C16.7,9.5 16.3,9.7 16.3,10.3 L16.3,12 L18.9,12 L18.7,14.9 L16.3,14.9 L16.3,23.2 L12.8,23.2 L12.8,14.9 L11.2,14.9 L11.2,12 L12.8,12 L12.8,10.1 C12.8,8.7 13.4,6.6 16.3,6.6 L18.9,6.6 L18.9,9.5 L18.8,9.5 Z" />
+
+				            </svg>
+
+				        </a>
+
+				    </li><!-- /.social__item -->
+
+
+				    <li class="social__item    social__item--delimited">
+
+				        <a class="social__link" href="#" target="_blank">
+
+				            <svg class="social__icon  social__icon--round" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
+
+				                <path d="M0 0v30h30V0H0zm23 21.153c0 1.02-.827 1.847-1.847 1.847H8.845C7.825 23 7 22.174 7 21.153V8.846C7 7.826 7.825 7 8.844 7h12.31C22.172 7 23 7.826 23 8.846v12.307z"/>
+
+				                <path d="M19.762 13.77c.1.392.16.804.16 1.23 0 2.72-2.203 4.923-4.92 4.923-2.72 0-4.924-2.203-4.924-4.923 0-.426.06-.838.162-1.23H8.846v6.77c0 .338.276.614.617.614H20.54c.34 0 .616-.276.616-.615v-6.77H19.76zm-1.07-1.848h1.847c.34 0 .612-.276.612-.616V9.46c0-.34-.276-.615-.616-.615H18.69c-.34 0-.615.276-.615.616v1.85c0 .34.276.615.615.615z" />
+
+				                <circle cx="14.999" cy="15" r="3.078"/>
+
+				            </svg>
+
+				        </a>
+
+				    </li><!-- /.social__item -->
+
+
+				</ul><!-- /.social__list -->
+
+
+		    </div><!-- /.wrapper -->
+
+		</div><!-- /.site-header -->
+
+		<div class="content">
+
+
+			<form name="mainForm" method="post" action="/the-experience" id="mainForm">
+<div>
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__SEAMLESSVIEWSTATE" id="__SEAMLESSVIEWSTATE" value="hucmm2zwmson5q2kabxy0hk3|96d3592d-3d85-4d2c-b05e-95d9fa67c6bb" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['mainForm'];
+if (!theForm) {
+    theForm = document.mainForm;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+				<!--groupTemplateStart--><div class="site-hero" style="background-image: url(/files/sharedassets/kangaroo_island_wilderness_trail/images/hero/rest-kiwt-hero.jpg);">
+
+    <div class="site-hero__content">
+
+        <h1 class="site-hero__title">Experience</h1>
+
+    </div>
+
+</div>
+
+<main role="main">
+
+	<!--normalTemplateStart--><div class="page-intro">
+
+    <div class="wrapper">
+
+        <h2 class="page-intro__title">Five days, the experience of a lifetime</h2>
+
+        <div class="page-intro__content">
+            <p>Towering cliffs of limestone and coagulated magma, storm-blasted coastal scrub and massive arcs of bone white beach; this is the wildness that awaits you on the Kangaroo Island Wilderness Trail.</p>
+<p>Few places in the world remain that provide such a setting for inner, deep listening and quiet, still awareness. Look around you and within - the opportunities for discovery are endless.</p>
+
+
+        </div>
+
+    </div><!-- /.wrapper -->
+
+</div><!-- /.page-intro -->
+
+
+<article class="article">
+
+
+
+<ul role="tablist" class="tablist">
+  <li><a role="tab" aria-controls="day-1" class="tablist__tab" href="#day-1">Day 1</a></li>
+  <li><a role="tab" aria-controls="day-2" class="tablist__tab" href="#day-2">Day 2</a></li>
+  <li><a role="tab" aria-controls="day-3" class="tablist__tab" href="#day-3">Day 3</a></li>
+  <li><a role="tab" aria-controls="day-4" class="tablist__tab" href="#day-4">Day 4</a></li>
+  <li><a role="tab" aria-controls="day-5" class="tablist__tab" href="#day-5">Day 5</a></li>
+</ul>
+
+<div role="tabpanel" class="tabpanel" id="day-1">
+
+    <div class="tabpanel__content">
+
+        <h2 class="tabpanel__title">Rocky River to Snake Lagoon</h2>
+
+        <ul class="icon-list">
+
+            <li>
+                <img class="icon-list__icon  icon-list__icon--distance" src="images/kiwt-icon-distance.svg" alt="">
+                <strong>Distance / Time</strong>
+                11.3 km / 4 hrs
+            </li>
+            <li>
+                <img class="icon-list__icon  icon-list__icon--difficulty" src="images/kiwt-icon-difficulty.svg" alt="">
+                <strong>Difficulty</strong>
+                Easy
+            </li>
+
         </ul>
 
+        <p>Day one commences at the Flinders Chase Visitor Centre and takes you to the famous Rocky River Platypus Waterholes where you may encounter the rare and iconic platypus. This shared section of the trail has plenty of interpretation and offers a great introduction to the park. When the path joins up with the Rocky River Trail you’ll be immersed in dense eucalypt woodland teeming with bird life and native animals. Reaching a lookout you will see the meandering Rocky River far below you as it flows out towards the Southern Ocean. You will then pass through riverbank and mallee habitats where wildflowers provide stunning arrays of colour all year around, along with a profusion of orchids and fungi in the cooler months. Traversing your way down from the ridge towards the river you will come across the spectacular sight of the Rocky River Cascades. The day comes to a close at the Cup Gum campsite, a peaceful setting for your first night’s rest hidden amongst sugar gums and ancient old growth cup gums.</p>
 
-        <div role="tabpanel" class="tabpanel" id="day-1">
+    </div>
 
-            <div class="tabpanel__content">
+    <div class="tabpanel__images">
+        <img src="http://placehold.it/520x310">
+        <img src="http://placehold.it/520x310">
+    </div>
 
-                <h2 class="tabpanel__title">Rocky River to Snake Lagoon</h2>
+</div>
 
-                <ul class="icon-list">
 
-                    <li>
-                        <img class="icon-list__icon  icon-list__icon--distance" src="images/kiwt-icon-distance.svg" alt="">
-                        <strong>Distance / Time</strong>
-                        11.3 km / 4 hrs
-                    </li>
-                    <li>
-                        <img class="icon-list__icon  icon-list__icon--difficulty" src="images/kiwt-icon-difficulty.svg" alt="">
-                        <strong>Difficulty</strong>
-                        Easy
-                    </li>
+<div role="tabpanel" class="tabpanel" id="day-2">
 
-                </ul>
+    <div class="tabpanel__content">
 
-                <p>Day one commences at the Flinders Chase Visitor Centre and takes you to the famous Rocky River Platypus Waterholes where you may encounter the rare and iconic platypus. This shared section of the trail has plenty of interpretation and offers a great introduction to the park. When the path joins up with the Rocky River Trail you’ll be immersed in dense eucalypt woodland teeming with bird life and native animals. Reaching a lookout you will see the meandering Rocky River far below you as it flows out towards the Southern Ocean. You will then pass through riverbank and mallee habitats where wildflowers provide stunning arrays of colour all year around, along with a profusion of orchids and fungi in the cooler months. Traversing your way down from the ridge towards the river you will come across the spectacular sight of the Rocky River Cascades. The day comes to a close at the Cup Gum campsite, a peaceful setting for your first night’s rest hidden amongst sugar gums and ancient old growth cup gums.</p>
+        <h2 class="tabpanel__title">Rocky River to Snake Lagoon 2</h2>
 
-            </div>
+        <ul class="icon-list">
 
-            <div class="tabpanel__images">
-                <img src="http://placehold.it/520x310">
-                <img src="http://placehold.it/520x310">
-            </div>
+            <li>
+                <img class="icon-list__icon  icon-list__icon--distance" src="images/kiwt-icon-distance.svg" alt="">
+                <strong>Distance / Time</strong>
+                11.3 km / 4 hrs
+            </li>
+            <li>
+                <img class="icon-list__icon  icon-list__icon--difficulty" src="images/kiwt-icon-difficulty.svg" alt="">
+                <strong>Difficulty</strong>
+                Easy
+            </li>
 
-        </div>
+        </ul>
 
+        <p>Day one commences at the Flinders Chase Visitor Centre and takes you to the famous Rocky River Platypus Waterholes where you may encounter the rare and iconic platypus. This shared section of the trail has plenty of interpretation and offers a great introduction to the park. When the path joins up with the Rocky River Trail you’ll be immersed in dense eucalypt woodland teeming with bird life and native animals. Reaching a lookout you will see the meandering Rocky River far below you as it flows out towards the Southern Ocean. You will then pass through riverbank and mallee habitats where wildflowers provide stunning arrays of colour all year around, along with a profusion of orchids and fungi in the cooler months. Traversing your way down from the ridge towards the river you will come across the spectacular sight of the Rocky River Cascades. The day comes to a close at the Cup Gum campsite, a peaceful setting for your first night’s rest hidden amongst sugar gums and ancient old growth cup gums.</p>
 
-        <div role="tabpanel" class="tabpanel" id="day-2">
+    </div>
 
-            <div class="tabpanel__content">
+    <div class="tabpanel__images">
+        <img src="http://placehold.it/520x310">
+        <img src="http://placehold.it/520x310">
+    </div>
 
-                <h2 class="tabpanel__title">Rocky River to Snake Lagoon 2</h2>
+</div>
 
-                <ul class="icon-list">
 
-                    <li>
-                        <img class="icon-list__icon  icon-list__icon--distance" src="images/kiwt-icon-distance.svg" alt="">
-                        <strong>Distance / Time</strong>
-                        11.3 km / 4 hrs
-                    </li>
-                    <li>
-                        <img class="icon-list__icon  icon-list__icon--difficulty" src="images/kiwt-icon-difficulty.svg" alt="">
-                        <strong>Difficulty</strong>
-                        Easy
-                    </li>
 
-                </ul>
 
-                <p>Day one commences at the Flinders Chase Visitor Centre and takes you to the famous Rocky River Platypus Waterholes where you may encounter the rare and iconic platypus. This shared section of the trail has plenty of interpretation and offers a great introduction to the park. When the path joins up with the Rocky River Trail you’ll be immersed in dense eucalypt woodland teeming with bird life and native animals. Reaching a lookout you will see the meandering Rocky River far below you as it flows out towards the Southern Ocean. You will then pass through riverbank and mallee habitats where wildflowers provide stunning arrays of colour all year around, along with a profusion of orchids and fungi in the cooler months. Traversing your way down from the ridge towards the river you will come across the spectacular sight of the Rocky River Cascades. The day comes to a close at the Cup Gum campsite, a peaceful setting for your first night’s rest hidden amongst sugar gums and ancient old growth cup gums.</p>
 
-            </div>
 
-            <div class="tabpanel__images">
-                <img src="http://placehold.it/520x310">
-                <img src="http://placehold.it/520x310">
-            </div>
 
-        </div>
+</article><!--normalTemplateEnd-->
 
+</main>
 
-        <div role="tabpanel" class="tabpanel" id="day-3">
 
-            <div class="tabpanel__content">
 
-                <h2 class="tabpanel__title">Rocky River to Snake Lagoon 3</h2>
 
-                <ul class="icon-list">
 
-                    <li>
-                        <img class="icon-list__icon  icon-list__icon--distance" src="images/kiwt-icon-distance.svg" alt="">
-                        <strong>Distance / Time</strong>
-                        11.3 km / 4 hrs
-                    </li>
-                    <li>
-                        <img class="icon-list__icon  icon-list__icon--difficulty" src="images/kiwt-icon-difficulty.svg" alt="">
-                        <strong>Difficulty</strong>
-                        Easy
-                    </li>
+<div class="wrapper--large  u-flex"><a class="navigation-tile" href="http://www.kangarooislandwildernesstrail.sa.gov.au/trip-essentials">
 
-                </ul>
+    <div class="navigation-tile__image    fixed-aspect-ratio  fixed-aspect-ratio--1x1" style="background-image: url(/files/sharedassets/kangaroo_island_wilderness_trail/images/navigation/blue-kiwt-nav.jpg)"></div>
 
-                <p>Day one commences at the Flinders Chase Visitor Centre and takes you to the famous Rocky River Platypus Waterholes where you may encounter the rare and iconic platypus. This shared section of the trail has plenty of interpretation and offers a great introduction to the park. When the path joins up with the Rocky River Trail you’ll be immersed in dense eucalypt woodland teeming with bird life and native animals. Reaching a lookout you will see the meandering Rocky River far below you as it flows out towards the Southern Ocean. You will then pass through riverbank and mallee habitats where wildflowers provide stunning arrays of colour all year around, along with a profusion of orchids and fungi in the cooler months. Traversing your way down from the ridge towards the river you will come across the spectacular sight of the Rocky River Cascades. The day comes to a close at the Cup Gum campsite, a peaceful setting for your first night’s rest hidden amongst sugar gums and ancient old growth cup gums.</p>
+    <div class="navigation-tile__text">
 
-            </div>
+      <h2 class="navigation-tile__title">Trip essentials</h2>
 
-            <div class="tabpanel__images">
-                <img src="http://placehold.it/520x310">
-                <img src="http://placehold.it/520x310">
-            </div>
+    </div><!-- /.navigation-tile__text -->
+</a><!-- /.navigation-tile --><a class="navigation-tile" href="http://www.kangarooislandwildernesstrail.sa.gov.au/nature-and-history">
 
-        </div>
+    <div class="navigation-tile__image    fixed-aspect-ratio  fixed-aspect-ratio--1x1" style="background-image: url(/files/sharedassets/kangaroo_island_wilderness_trail/images/navigation/kangaroo-kiwt-nav.jpg)"></div>
 
+    <div class="navigation-tile__text">
 
-        <div role="tabpanel" class="tabpanel" id="day-4">
+      <h2 class="navigation-tile__title">Nature and history</h2>
 
-            <div class="tabpanel__content">
+    </div><!-- /.navigation-tile__text -->
+</a><!-- /.navigation-tile --><a class="navigation-tile" href="http://www.kangarooislandwildernesstrail.sa.gov.au/the-experience">
 
-                <h2 class="tabpanel__title">Rocky River to Snake Lagoon 4</h2>
+    <div class="navigation-tile__image    fixed-aspect-ratio  fixed-aspect-ratio--1x1" style="background-image: url(/files/sharedassets/kangaroo_island_wilderness_trail/images/navigation/selfie-kiwt-nav.jpg)"></div>
 
-                <ul class="icon-list">
+    <div class="navigation-tile__text">
 
-                    <li>
-                        <img class="icon-list__icon  icon-list__icon--distance" src="images/kiwt-icon-distance.svg" alt="">
-                        <strong>Distance / Time</strong>
-                        11.3 km / 4 hrs
-                    </li>
-                    <li>
-                        <img class="icon-list__icon  icon-list__icon--difficulty" src="images/kiwt-icon-difficulty.svg" alt="">
-                        <strong>Difficulty</strong>
-                        Easy
-                    </li>
+      <h2 class="navigation-tile__title">Experience</h2>
 
-                </ul>
+    </div><!-- /.navigation-tile__text -->
+</a><!-- /.navigation-tile --><a class="navigation-tile" href="http://www.kangarooislandwildernesstrail.sa.gov.au/book">
 
-                <p>Day one commences at the Flinders Chase Visitor Centre and takes you to the famous Rocky River Platypus Waterholes where you may encounter the rare and iconic platypus. This shared section of the trail has plenty of interpretation and offers a great introduction to the park. When the path joins up with the Rocky River Trail you’ll be immersed in dense eucalypt woodland teeming with bird life and native animals. Reaching a lookout you will see the meandering Rocky River far below you as it flows out towards the Southern Ocean. You will then pass through riverbank and mallee habitats where wildflowers provide stunning arrays of colour all year around, along with a profusion of orchids and fungi in the cooler months. Traversing your way down from the ridge towards the river you will come across the spectacular sight of the Rocky River Cascades. The day comes to a close at the Cup Gum campsite, a peaceful setting for your first night’s rest hidden amongst sugar gums and ancient old growth cup gums.</p>
+    <div class="navigation-tile__image    fixed-aspect-ratio  fixed-aspect-ratio--1x1" style="background-image: url(/files/sharedassets/kangaroo_island_wilderness_trail/images/navigation/cliff-kiwt-nav.jpg)"></div>
 
-            </div>
+    <div class="navigation-tile__text">
 
-            <div class="tabpanel__images">
-                <img src="http://placehold.it/520x310">
-                <img src="http://placehold.it/520x310">
-            </div>
+      <h2 class="navigation-tile__title">Book now</h2>
 
-        </div>
+    </div><!-- /.navigation-tile__text -->
+</a><!-- /.navigation-tile --></div><!-- /.wrapper--large -->
 
 
-        <div role="tabpanel" class="tabpanel" id="day-5">
 
-            <div class="tabpanel__content">
+		</div><!-- /.content -->
 
-                <h2 class="tabpanel__title">Rocky River to Snake Lagoon 5</h2>
 
-                <ul class="icon-list">
+	</div><!-- /.site-wrap -->
 
-                    <li>
-                        <img class="icon-list__icon  icon-list__icon--distance" src="images/kiwt-icon-distance.svg" alt="">
-                        <strong>Distance / Time</strong>
-                        11.3 km / 4 hrs
-                    </li>
-                    <li>
-                        <img class="icon-list__icon  icon-list__icon--difficulty" src="images/kiwt-icon-difficulty.svg" alt="">
-                        <strong>Difficulty</strong>
-                        Easy
-                    </li>
+    <!-- jQuery -->
 
-                </ul>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 
-                <p>Day one commences at the Flinders Chase Visitor Centre and takes you to the famous Rocky River Platypus Waterholes where you may encounter the rare and iconic platypus. This shared section of the trail has plenty of interpretation and offers a great introduction to the park. When the path joins up with the Rocky River Trail you’ll be immersed in dense eucalypt woodland teeming with bird life and native animals. Reaching a lookout you will see the meandering Rocky River far below you as it flows out towards the Southern Ocean. You will then pass through riverbank and mallee habitats where wildflowers provide stunning arrays of colour all year around, along with a profusion of orchids and fungi in the cooler months. Traversing your way down from the ridge towards the river you will come across the spectacular sight of the Rocky River Cascades. The day comes to a close at the Cup Gum campsite, a peaceful setting for your first night’s rest hidden amongst sugar gums and ancient old growth cup gums.</p>
+    <!-- Local fallback -->
 
-            </div>
+    <script>window.jQuery || document.write('<script src="http://www.kangarooislandwildernesstrail.sa.gov.au/files/templates/00000000-0000-0000-0000-000000000000/f88a7f3c-df7e-430a-825c-24cfa8dec9a8/jquery1111min.js">\x3C/script>')</script>
 
-            <div class="tabpanel__images">
-                <img src="http://placehold.it/520x310">
-                <img src="http://placehold.it/520x310">
-            </div>
+    <!-- End local fallback -->
 
-        </div>
+    <!-- End jQuery -->
 
+    <script src="http://www.kangarooislandwildernesstrail.sa.gov.au/files/templates/00000000-0000-0000-0000-000000000000/2732a808-4d7f-431d-92ec-33245fb1e69c/plugins.js"></script>
+    <script src="js/main.js"></script>
 
-
-    </article>
-
-{% endblock %}
-
-
-
-
-
-{% block javascript %}
-    {{ super() }}
-{% endblock %}
-
-
-
-
-
-{% block local_javascript %}
-    <script>
-        /*global $*/
-
-        // a temp value to cache *what* we're about to show
-        var target = null;
-
-        // collect all the tabs
-        var tabs = $('.tablist__tab').on('click', function () {
-          console.log('click')
-          target = $(this.hash).removeAttr('id');
-          if (location.hash === this.hash) {
-            setTimeout(update);
-          }
-        }).attr('tabindex', '0');
-
-        // get an array of the panel ids (from the anchor hash)
-        var targets = tabs.map(function () {
-          return this.hash;
-        }).get();
-
-        // use those ids to get a jQuery collection of panels
-        var panels = $(targets.join(',')).each(function () {
-          // keep a copy of what the original el.id was
-          $(this).data('old-id', this.id);
-        });
-
-        function update() {
-          console.log('update')
-          if (target) {
-            target.attr('id', target.data('old-id'));
-            target = null;
-          }
-
-          var hash = window.location.hash;
-          if (targets.indexOf(hash) !== -1) {
-            return show(hash);
-          }
-
-          // NOTE: this was added after the article was written
-          // to fix going "back" on the browser nav to an empty state
-          if (!hash) {
-            show();
-          }
-        }
-
-        function show(id) {
-          // if no value was given, let's take the first panel
-          if (!id) {
-            id = targets[0];
-          }
-          // remove the selected class from the tabs,
-          // and add it back to the one the user selected
-          tabs.removeClass('selected').attr('aria-selected', 'false').filter(function () {
-            return (this.hash === id);
-          }).addClass('selected').attr('aria-selected', 'true');
-
-          // now hide all the panels, then filter to
-          // the one we're interested in, and show it
-          panels.hide().attr('aria-hidden', 'true').filter(id).show().attr('aria-hidden', 'false');
-        }
-
-        window.addEventListener('hashchange', update);
-
-        // initialise
-        if (targets.indexOf(window.location.hash) !== -1) {
-          update();
-        } else {
-          show();
-        }
-    </script>
-{% endblock %}
+</body>
+</html>
