@@ -38,27 +38,27 @@
         }
     }
 
+    &--0,
+    &--4,
+    &--8 {
+        background-color: #fff0e1;
+    }
+
     &--1,
     &--5,
     &--9 {
-        background-color: #fff0e1;
+        background-color: #dee0ee;
     }
 
     &--2,
     &--6,
     &--10 {
-        background-color: #dee0ee;
+        background-color: #f0ece9;
     }
 
     &--3,
     &--7,
     &--11 {
-        background-color: #f0ece9;
-    }
-
-    &--4,
-    &--8,
-    &--12 {
         background-color: #e5eeed;
     }
 

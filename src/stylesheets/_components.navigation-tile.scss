@@ -87,7 +87,8 @@ $sagovau-navigation-tile-gradient-height: 2 * $sagovau-spacing-unit-base !defaul
         transition: all $sagovau-transition-time;
 
         .#{$sagovau-namespace}navigation-tile:hover & {
-            background: #fff;
+            background-image: url(#{$sagovau-path-shared}s3-navigation-tile-background.png); /* fallback for browsers not supporting css gradients */
+            background-image: linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 1) $sagovau-navigation-tile-gradient-height);    /* [1] */
         }
 
         > :last-child {
@@ -124,6 +125,7 @@ $sagovau-navigation-tile-gradient-height: 2 * $sagovau-spacing-unit-base !defaul
 
         /*h2*/.#{$sagovau-namespace}navigation-tile__details {
             color: $sagovau-color-text-base;
+            transition: all $sagovau-transition-time;
 
             .#{$sagovau-namespace}navigation-tile:hover & {
                 text-decoration: underline;  /* [1] */
