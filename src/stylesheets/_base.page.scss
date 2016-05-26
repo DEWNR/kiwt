@@ -2,6 +2,9 @@
     #PAGE
 \*------------------------------------*/
 
+// scss-lint:disable all
+
+
 html {
     line-height: 1.8;
 }
@@ -9,6 +12,7 @@ html {
 
 div.embedded-search div.search-gadget.BE div.infants,
 div.embedded-search div.search-gadget.BE div.observers,
+div.embedded-search div.search-gadget.BE div.students,
 div#wdOverlayContent div.add-to-cart-form div.quantity {
     display: none!important;
 }

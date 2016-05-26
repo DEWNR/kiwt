@@ -64,7 +64,7 @@ $sagovau-navigation-tile-gradient-height: 2 * $sagovau-spacing-unit-base !defaul
         transition: all $sagovau-transition-time;
 
         .#{$sagovau-namespace}navigation-tile:hover & {
-            transform: scale(1.2, 1.2);
+            transform: scale(1.08, 1.08);
         }
     }
 
