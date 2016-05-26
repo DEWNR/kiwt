@@ -12,10 +12,16 @@
     }
 }
 
-    /*h2*/.#{$sagovau-namespace}page-intro__title {
-        @extend %#{$sagovau-namespace}beta;
-    }
+
+/*h2*/.#{$sagovau-namespace}page-intro__title {
+    @extend %#{$sagovau-namespace}beta;
+}
+
 
 /*div*/.#{$sagovau-namespace}page-intro__content {
+
+    @include media-query(large-and-up) {
+        padding: 0 10%;
+    }
 
 }
