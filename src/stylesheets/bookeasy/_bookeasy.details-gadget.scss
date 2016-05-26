@@ -6,12 +6,17 @@
 
 
 #bookeasy__details-gadget {
+    margin-bottom: 100px;
 
     div.BE.details-gadget {
         color: $sagovau-color-text-base;
         font-family: "Frutiger LT Com", Helvetica, Arial, sans-serif;
         font-size: 16px;
         font-weight: 200;
+
+        * {
+            border: 0;
+        }
 
         div.embedded-search {  }
 
@@ -20,9 +25,12 @@
 
             table {
                 thead {
+                    display: none;
+
                     td {
                         background: #065931;
                         background: rgba(6, 89, 49, 0.95);
+                        border: 0;
 
                         &.title {  }
                         &.quantity {  }
@@ -38,7 +46,7 @@
 
                 tbody {
                     tr {
-                        border-bottom: 1px solid rgba(0, 0, 0, .03);
+                        // border-bottom: 1px solid rgba(0, 0, 0, .03);
 
                         &.odd {
                             background: rgba(255, 255, 255, 0.85);
@@ -57,7 +65,6 @@
 
                             &.name {
                                 padding: 10px 10px 8px 0;
-                                width: 800px;
                                 text-align: left;
 
                                 div.thumb {
@@ -77,6 +84,7 @@
                                     color: $sagovau-color-text-base;
                                     font-size: 26px;
                                     text-align: left;
+                                    display: none;
 
                                     &.more {
                                         display: none;
@@ -87,6 +95,8 @@
                             &.quantity {  }
 
                             &.tour-date {
+                                display: none;
+
                                 label {
                                     color: $sagovau-color-text-base;
                                     font-weight: 400;

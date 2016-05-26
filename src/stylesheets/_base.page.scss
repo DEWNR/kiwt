@@ -13,6 +13,7 @@ html {
 div.embedded-search div.search-gadget.BE div.infants,
 div.embedded-search div.search-gadget.BE div.observers,
 div.embedded-search div.search-gadget.BE div.students,
-div#wdOverlayContent div.add-to-cart-form div.quantity {
+div#wdOverlayContent div.add-to-cart-form div.quantity,
+.BE .noItems {
     display: none!important;
 }
