@@ -27,6 +27,9 @@
               "source": ["src/javascripts/bookeasy-details.js"],
               "filename": "bookeasy-details.js"
           },{
+              "source": ["src/javascripts/bookeasy-booking.js"],
+              "filename": "bookeasy-booking.js"
+          },{
             "source": ["src/javascripts/color-thief.js"],
             "filename": "color-thief.js"
           },{
