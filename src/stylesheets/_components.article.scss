@@ -26,7 +26,11 @@ $sagovau-article-loaded: false !default; /* [1] */
             bottom: $sagovau-spacing-unit-base;
         }
         max-width: $sagovau-max-width + $sagovau-spacing-unit-base * 2;
-        padding: $sagovau-spacing-unit-base * 2;
+        padding: $sagovau-spacing-unit-base;
+
+        @include media-query(large-and-up) {
+            padding: $sagovau-spacing-unit-base * 2;
+        }
     }
 
 

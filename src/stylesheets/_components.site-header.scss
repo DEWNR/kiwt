@@ -2,9 +2,11 @@
     #SITE-HEADER
 \*------------------------------------*/
 
+// scss-lint:disable all
+
 
 /*header*/.#{$sagovau-namespace}site-header {
-    background: rgba(255, 255, 255, 0.9);
+    background: rgba(255, 255, 255, 1);
     padding: 20px 0;
     width: 100%;
     z-index: 145;
@@ -18,6 +20,10 @@
             position: fixed;
             top: 0;
         }
+    }
+
+    @include media-query(large-and-up) {
+        background: rgba(255, 255, 255, 0.9);
     }
 
     .wrapper {
@@ -71,25 +77,28 @@
 
             &.is-button {
                 border-left: 0;
-                display: inline-block;
 
-                a {
-                    padding: 0.5em 1em;
-                    border: 1px solid $sagovau-color-text-base;
-                    border-radius: 4px;
-                    margin: 0;
-                    display: block;
-                    transition: background $sagovau-transition-time ease-in-out, color $sagovau-transition-time ease-in-out, border $sagovau-transition-time ease-in-out;
+                @include media-query(large-and-up) {
+                    display: inline-block;
 
-                    &:hover,
-                    &:focus {
-                        background: #000;
-                        border-color: #000;
-                        color: #fff;
-                    }
+                    a {
+                        padding: 0.5em 1em;
+                        border: 1px solid $sagovau-color-text-base;
+                        border-radius: 4px;
+                        margin: 0;
+                        display: block;
+                        transition: background $sagovau-transition-time ease-in-out, color $sagovau-transition-time ease-in-out, border $sagovau-transition-time ease-in-out;
 
-                    @media screen and (min-width: 1060px) {
-                        margin: 0 20px 0 0;
+                        &:hover,
+                        &:focus {
+                            background: #000;
+                            border-color: #000;
+                            color: #fff;
+                        }
+
+                        @media screen and (min-width: 1060px) {
+                            margin: 0 20px 0 0;
+                        }
                     }
                 }
             }
@@ -107,6 +116,60 @@
             }
         }
     }
+
+
+    /*a*/.#{$sagovau-namespace}menu-toggle {
+        margin: 0 20px 0 0;
+        color: $sagovau-color-text-base;
+        text-decoration: none;
+        transition: color $sagovau-transition-time ease-in-out;
+
+        &:hover,
+        &:focus {
+            color: #000;
+        }
+
+        @include media-query(large-and-up) {
+            display: none;
+        }
+
+    }
+
+
+    /*nav*/.#{$sagovau-namespace}site-header__mobilenavigation {
+        position: absolute;
+        width: 100%;
+        background: #fff;
+        z-index: 135;
+        transition: all 1s ease-in-out;
+        display: none;
+
+        @include media-query(large-and-up) {
+            display: none;
+        }
+
+        ul {
+            list-style: none;
+            margin: 0 auto;
+            padding: 0;
+        }
+    }
+
+    /*nav*/.#{$sagovau-namespace}site-header__mobilenavigation--active {
+        display: block;
+    }
+
+        /*li*/.#{$sagovau-namespace}site-header__mobilenavigation-item {
+            text-align: center;
+
+            a {
+                @extend %#{$sagovau-namespace}beta;
+                font-size: 20px;
+                text-decoration: none;
+                padding: 0.5em 0;
+                display: block;
+            }
+        }
 
 
     .spacer {

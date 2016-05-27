@@ -14,6 +14,12 @@ $(window).scroll(function() {
 
 $(function() {
 
+    $('.menu-toggle').on('touchstart click', function(event) {
+        $('.site-header__mobilenavigation').toggleClass('site-header__mobilenavigation--active');
+
+        event.preventDefault();
+    })
+
 
     // split article column ground into two
     $('.article-cards--columns').columnize({
