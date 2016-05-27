@@ -9,7 +9,7 @@
     padding: 9px 0;
     position: relative;
     z-index: 150;
-    font-family: "Frutiger W01", serif, Helvetica, Arial, sans-serif;
+    font-family: 'Frutiger W01', serif, Helvetica, Arial, sans-serif;
 
     .wrapper {
         align-items: center;
@@ -21,8 +21,9 @@
     /*a*/.#{$sagovau-namespace}global-header__logotype {
         margin: 0 20px;
         width: 266px;
+        height: 32px;
 
-        @include media-query(huge) {
+        @media screen and (min-width: 1060px) {
             margin-left: 0;
         }
 

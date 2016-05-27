@@ -14,7 +14,16 @@ $(window).scroll(function() {
 
 $(function() {
 
-    $('.menu-toggle').on('touchstart click', function(event) {
+    $('.tabpanel').each(function(index){
+        var dayNumber = index + 1;
+
+        $(this).attr('id', 'day-' + dayNumber).prepend( '<div class="tabpanel__accordion-title">Day ' + dayNumber + '</div>' );
+
+
+    });
+
+
+    $('.menu-toggle').on('touchstart click', function(event){
         $('.site-header__mobilenavigation').toggleClass('site-header__mobilenavigation--active');
 
         event.preventDefault();

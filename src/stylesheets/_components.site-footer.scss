@@ -16,17 +16,17 @@
         /*a*/.#{$sagovau-namespace}site-footer__logo {
             margin: 0 0 $sagovau-spacing-unit-base;
             display: block;
-            min-width: 152px;
+            width: 152px;
         }
 
 
     /*p*/.#{$sagovau-namespace}site-footer__copyright {
-        color: #2e2925;
+        color: #9f9e9d;
         margin: 0;
         padding: $sagovau-spacing-unit-base;
 
         a {
-            color: #2e2925;
+            color: #9f9e9d;
             text-decoration: none;
         }
     }

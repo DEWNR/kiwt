@@ -13,17 +13,14 @@
     box-shadow: 0 -2px 55px rgba(0, 0, 0, 0.3);
     font-family: $sagovau-font-family-highlight;
 
-    @include media-query(small-and-up) {
+    @media screen and (min-width: 1060px) {
+        background: rgba(255, 255, 255, 0.9);
         position: absolute;
 
         &.is-fixed {
             position: fixed;
             top: 0;
         }
-    }
-
-    @include media-query(large-and-up) {
-        background: rgba(255, 255, 255, 0.9);
     }
 
     .wrapper {
@@ -78,7 +75,7 @@
             &.is-button {
                 border-left: 0;
 
-                @include media-query(large-and-up) {
+                @media screen and (min-width: 1060px) {
                     display: inline-block;
 
                     a {
@@ -129,7 +126,7 @@
             color: #000;
         }
 
-        @include media-query(large-and-up) {
+        @media screen and (min-width: 1060px) {
             display: none;
         }
 

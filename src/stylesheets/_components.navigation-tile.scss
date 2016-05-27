@@ -12,6 +12,10 @@
 
 $sagovau-navigation-tile-gradient-height: 2 * $sagovau-spacing-unit-base !default;
 
+.navigation-tiles {
+    background: #9f9e9d;
+}
+
 .u-flex {
     display: flex;
     flex-flow: row wrap;
@@ -61,10 +65,11 @@ $sagovau-navigation-tile-gradient-height: 2 * $sagovau-spacing-unit-base !defaul
         background-size: cover;
         margin-bottom: -$sagovau-navigation-tile-gradient-height;
         transform: scale(1, 1);
-        transition: all $sagovau-transition-time;
+        transition: all 0.6s ease-in-out;
 
         .#{$sagovau-namespace}navigation-tile:hover & {
-            transform: scale(1.08, 1.08);
+            transform: scale(1.04, 1.04);
+            transition: all 0.6s ease-in-out;
         }
     }
 

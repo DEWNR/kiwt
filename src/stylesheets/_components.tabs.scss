@@ -58,6 +58,15 @@
 }
 
 
+/*div*/.#{$sagovau-namespace}tabpanel__accordion-title {
+    @extend %#{$sagovau-namespace}beta;
+
+    @include media-query(large-and-up) {
+        display: none;
+    }
+}
+
+
 /*div*/.#{$sagovau-namespace}tabpanel__content {
     padding: 0;
 
