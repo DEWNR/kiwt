@@ -19,7 +19,10 @@ $(function() {
 
         $(this).attr('id', 'day-' + dayNumber).prepend( '<div class="tabpanel__accordion-title">Day ' + dayNumber + '</div>' );
 
+    });
 
+    $('.tabpanel__accordion-title').on('click', function(event){
+        $(this).toggleClass('tabpanel__accordion-title--opened').siblings('.tabpanel__accordion-content').toggleClass('tabpanel__accordion-content--opened');
     });
 
 

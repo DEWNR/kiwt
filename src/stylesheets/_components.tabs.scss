@@ -60,9 +60,43 @@
 
 /*div*/.#{$sagovau-namespace}tabpanel__accordion-title {
     @extend %#{$sagovau-namespace}beta;
+    background: #e8e8e8;
+    padding: 0.4em $sagovau-spacing-unit-base 0.2em;
+    margin-bottom: 1px;
+
+    &:hover,
+    &:focus {
+        background: #e8e8e8;
+        outline: 0;
+    }
+
+    &--opened {
+        // background: $sagovau-color-brand;
+        // color: #fff;
+    }
 
     @include media-query(large-and-up) {
         display: none;
+    }
+}
+
+
+/*div*/.#{$sagovau-namespace}tabpanel__accordion-content {
+    display: none;
+    padding-top: $sagovau-spacing-unit-base;
+
+    @include media-query(large-and-up) {
+        padding-top: 0;
+        display: flex;
+        width: 100%;
+    }
+
+    &--opened {
+        display: block;
+
+        @include media-query(large-and-up) {
+            display: flex;
+        }
     }
 }
 
