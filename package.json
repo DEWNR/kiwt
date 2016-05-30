@@ -1,7 +1,7 @@
 {
-  "name": "dewnr-series-three",
+  "name": "kiwt",
   "version": "0.2.6",
-  "description": "The base for the Department of Environment, Water and Natural Resources' series three websites. Builds upon dewnr-bedrock.",
+  "description": "Kangaroo Island Wilderness Trail",
   "engines": {
     "node": "0.12.2",
     "npm": ">=3.0.0"
