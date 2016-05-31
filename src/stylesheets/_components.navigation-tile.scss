@@ -13,7 +13,11 @@
 $sagovau-navigation-tile-gradient-height: 2 * $sagovau-spacing-unit-base !default;
 
 .navigation-tiles {
-    background: #9f9e9d;
+    background: #fff;
+
+    @include media-query(large-and-up) {
+        background: #9f9e9d;
+    }
 }
 
 .u-flex {
@@ -29,6 +33,7 @@ $sagovau-navigation-tile-gradient-height: 2 * $sagovau-spacing-unit-base !defaul
     width: 50%;
     text-decoration: none;
     overflow: hidden;
+    border: 0;
 
     @include media-query(large-and-up) {
         width: 33.3333333%;
