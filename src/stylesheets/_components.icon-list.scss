@@ -29,7 +29,7 @@
         padding: 0 0.5em 1em;
         list-style: none;
         font-weight: 200;
-        display: block;
+        display: flex;
         line-height: 1;
         text-align: left;
 
@@ -43,9 +43,9 @@
     strong {
         font-weight: 700;
         margin-bottom: 0.4em;
+            display: block;
 
         @include media-query(small-and-up) {
-            display: block;
         }
 
         @include media-query(large-and-up) {
@@ -57,6 +57,13 @@
         padding: 0 0 $sagovau-spacing-unit-base;
     }
 }
+
+
+/*p*/.#{$sagovau-namespace}icon-list__text {
+    margin: 0;
+    align-self: center;
+}
+
 
 /*img*/.#{$sagovau-namespace}icon-list__icon {
     margin-right: 1em;
