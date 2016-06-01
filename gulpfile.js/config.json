@@ -29,15 +29,9 @@
           },{
               "source": ["src/javascripts/bookeasy-booking.js"],
               "filename": "bookeasy-booking.js"
-          },{
-            "source": ["src/javascripts/color-thief.js"],
-            "filename": "color-thief.js"
-          },{
-            "source": ["./node_modules/jquery-fancybox/source/js/jquery.fancybox.js", "./node_modules/jquery-columnizer/src/jquery.columnizer.js"],
-            "filename": "plugins.js"
-          },{
-            "source": ["src/javascripts/main.js"],
-            "filename": "main.js"
+          }, {
+            "source": ["./node_modules/jquery-fancybox/source/js/jquery.fancybox.js", "./node_modules/jquery-columnizer/src/jquery.columnizer.js", "src/javascripts/main.js"],
+            "filename": "app.js"
           }
       ],
       "extensions": ["js"]

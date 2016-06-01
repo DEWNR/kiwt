@@ -2,8 +2,6 @@ var sh = $('.site-header');
 var height = screen.height / 2;
 
 $(window).scroll(function() {
-    // parallax();
-
     if($(this).scrollTop() > 51) {
         sh.addClass('is-fixed');
     } else {
@@ -59,13 +57,11 @@ $(function() {
     });
 
     /*global $*/
-
-    // a temp value to cache *what* we're about to show
     var target = null;
 
     // collect all the tabs
     var tabs = $('.tablist__tab').on('click', function () {
-      console.log('click')
+
       target = $(this.hash).removeAttr('id');
       if (location.hash === this.hash) {
         setTimeout(update);
@@ -84,7 +80,7 @@ $(function() {
     });
 
     function update() {
-      console.log('update')
+
       if (target) {
         target.attr('id', target.data('old-id'));
         target = null;
