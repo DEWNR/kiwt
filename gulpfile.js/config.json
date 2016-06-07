@@ -30,6 +30,9 @@
               "source": ["src/javascripts/bookeasy-booking.js"],
               "filename": "bookeasy-booking.js"
           }, {
+              "source": ["src/javascripts/modernizr.custom.45448.js", "src/javascripts/prepare.js"],
+              "filename": "prepare.js"
+          }, {
             "source": ["./node_modules/jquery-fancybox/source/js/jquery.fancybox.js", "./node_modules/jquery-columnizer/src/jquery.columnizer.js", "src/javascripts/main.js"],
             "filename": "app.js"
           }

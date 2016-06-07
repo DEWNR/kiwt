@@ -1,3 +1,44 @@
+/* = Browser compatibility warnings = */
+
+(function () {
+
+    "use strict";
+
+    var isMajor, isMinor, majorHTML, minorHTML, target = "body";
+
+
+    // Check for major issues with browser compatibility
+
+    isMajor = !Modernizr.backgroundsize || !Modernizr.inlinesvg || !Modernizr.generatedcontent || !Modernizr.boxsizing;
+
+
+    // Check for minor issues with browser compatiblity
+
+    isMinor = !Modernizr.rgba || !Modernizr.opacity || !Modernizr.cssgradients || !Modernizr.fontface || !Modernizr.csstransitions;
+
+
+    // Set the corresponding warning messages
+
+    majorHTML = '<div class="box  box--small  color-scheme--danger"><div class="wrapper"><strong class="color-scheme__highlight">Warning!</strong> The browser you&rsquo;re using is not able display this site correctly. <a href="http://whatbrowser.org/">Upgrade your browser</a> for a better experience.</div></div>';
+
+    minorHTML = '<div class="box  box--small  color-scheme--warning"><div class="wrapper"><strong class="color-scheme__highlight">Warning!</strong> The browser you&rsquo;re using does not support all the features of this site. <a href="http://whatbrowser.org/">Upgrade your browser</a> for a better experience.</div></div>';
+
+
+    // Add the warning to the DOM, if required
+
+    if (isMajor) {
+
+        $(target).prepend(majorHTML);
+
+    } else if (isMinor) {
+
+        $(target).prepend(minorHTML);
+
+    }
+
+}());
+
+
 var sh = $('.site-header');
 var height = screen.height / 2;
 
