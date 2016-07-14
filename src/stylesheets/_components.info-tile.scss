@@ -1,0 +1,63 @@
+/*------------------------------------*\
+    #INFO-TILE
+\*------------------------------------*/
+
+
+.info-tiles {
+}
+
+.u-flex {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+}
+
+
+/*div*/.#{$sagovau-namespace}info-tile {
+    color: $sagovau-color-text-base;
+    width: 50%;
+    text-decoration: none;
+    overflow: hidden;
+    border: 1px solid #d8d7d7;
+    border-right: 0;
+    margin-bottom: $sagovau-spacing-unit-base;
+
+    &:nth-child(4n+4),
+    &:last-child {
+        border-right: 1px solid #d8d7d7;
+    }
+
+    @include media-query(large-and-up) {
+        width: 25%;
+    }
+
+}
+
+    /*div*/.#{$sagovau-namespace}info-tile__image {
+
+    }
+
+
+    /*div*/.#{$sagovau-namespace}info-tile__text {
+        padding: $sagovau-spacing-unit-base;
+    }
+
+
+    /*div*/.#{$sagovau-namespace}info-tile__link {
+        padding: 0;
+        color: $sagovau-color-text-base;
+    }
+
+
+    /*h3*/.#{$sagovau-namespace}info-tile__title {
+        @extend %#{$sagovau-namespace}epsilon;
+        text-align: left;
+        padding: 0;
+        line-height: 1.1;
+
+        @include media-query(large-and-up) {
+            margin-bottom: $sagovau-spacing-unit-base; /* [1] */
+            padding: 0;      /* [2] */
+        }
+
+    }
