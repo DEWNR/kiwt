@@ -75,9 +75,9 @@ $(function() {
     // split article column ground into two
     $('.article-cards--columns').columnize({
         columns: 2,
-        lastNeverTallest: true,
+        lastNeverTallest: false,
         doneFunc: function(){
-            $('.last.column .article-card').last().height($('.last.column .article-card').last().height() + ($('.first.column').height() - $('.last.column').height()));
+            $('.first.column .article-card').last().height($('.first.column .article-card').last().height() + ($('.last.column').height() - $('.first.column').height()));
         }
     });
 
