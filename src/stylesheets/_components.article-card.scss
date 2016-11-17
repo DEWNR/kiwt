@@ -139,6 +139,12 @@
 
             padding: $sagovau-spacing-unit-base;
 
+            /*div*/.#{$sagovau-namespace}article-card--cto & {
+                padding-bottom: 90px;
+                height: 100%;
+                position: relative;
+            }
+
             @include media-query(large-and-up) {
                 max-width: 540px;
             }
@@ -169,4 +175,31 @@
                 @extend %#{$sagovau-namespace}article__title;
 
                 padding-top: 0;
+            }
+
+
+            /*p*/.#{$sagovau-namespace}article-card__link {
+                margin: 0;
+
+                a {
+                    color: $sagovau-color-text-base;
+
+                    &:focus,
+                    &:hover {
+                        text-decoration: none;
+                    }
+                }
+            }
+
+
+            /*div*/.#{$sagovau-namespace}article-card__logos {
+                position: absolute;
+                bottom: $sagovau-spacing-unit-base;
+                left: $sagovau-spacing-unit-base;
+
+                img {
+                    height: 50px;
+                    margin-right: $sagovau-spacing-unit-base--small;
+                }
+
             }
