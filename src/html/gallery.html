@@ -12,45 +12,37 @@
 {% block content %}
 
     {% include "shared/page-intro.html" %}
-
+    
     <article class="article">
-
-        {# <div class="masonry">
-            <div class="item"><a class="fancybox" href="images/upload/gallery/GH1.jpg" rel="gallery"><img src="images/upload/gallery/GH1.jpg" /></a></div>
-            <div class="item"><a class="fancybox" href="images/upload/gallery/GV1.jpg" rel="gallery"><img src="images/upload/gallery/GV1.jpg" /></a></div>
-            <div class="item"><a class="fancybox" href="images/upload/gallery/GH2.jpg" rel="gallery"><img src="images/upload/gallery/GH2.jpg" /></a></div>
-            <div class="item"><a class="fancybox" href="images/upload/gallery/GV2.jpg" rel="gallery"><img src="images/upload/gallery/GV2.jpg" /></a></div>
-            <div class="item"><a class="fancybox" href="images/upload/gallery/GH3.jpg" rel="gallery"><img src="images/upload/gallery/GH3.jpg" /></a></div>
-            <div class="item"><a class="fancybox" href="images/upload/gallery/GH7.jpg" rel="gallery"><img src="images/upload/gallery/GH7.jpg" /></a></div>
-            <div class="item"><a class="fancybox" href="images/upload/gallery/GV3.jpg" rel="gallery"><img src="images/upload/gallery/GV3.jpg" /></a></div>
-            <div class="item"><a class="fancybox" href="images/upload/gallery/GH4.jpg" rel="gallery"><img src="images/upload/gallery/GH4.jpg" /></a></div>
-            <div class="item"><a class="fancybox" href="images/upload/gallery/GV4.jpg" rel="gallery"><img src="images/upload/gallery/GV4.jpg" /></a></div>
-            <div class="item"><a class="fancybox" href="images/upload/gallery/GH5.jpg" rel="gallery"><img src="images/upload/gallery/GH5.jpg" /></a></div>
-            <div class="item"><a class="fancybox" href="images/upload/gallery/GV5.jpg" rel="gallery"><img src="images/upload/gallery/GV5.jpg" /></a></div>
-            <div class="item"><a class="fancybox" href="images/upload/gallery/GH6.jpg" rel="gallery"><img src="images/upload/gallery/GH6.jpg" /></a></div>
-            <div class="item"><a class="fancybox" href="images/upload/gallery/GV6.jpg" rel="gallery"><img src="images/upload/gallery/GV6.jpg" /></a></div>
-            <div class="item"><a class="fancybox" href="images/upload/gallery/GV7.jpg" rel="gallery"><img src="images/upload/gallery/GV7.jpg" /></a></div>
-            <div class="item"><a class="fancybox" href="images/upload/gallery/GH8.jpg" rel="gallery"><img src="images/upload/gallery/GH8.jpg" /></a></div>
-            <div class="item"><a class="fancybox" href="images/upload/gallery/GV8.jpg" rel="gallery"><img src="images/upload/gallery/GV8.jpg" /></a></div>
-            <div class="item"><a class="fancybox" href="images/upload/gallery/GV9.jpg" rel="gallery"><img src="images/upload/gallery/GV9.jpg" /></a></div>
-        </div> #}
-
-        <div class="stackla-widget" data-id="11956" data-hash="57eb4d0ac2ca9" data-ct=""
-             data-alias="environmentsa.stackla.com" data-ttl="30" style="width: 100%; overflow: hidden;"></div>
+        <link rel="stylesheet" type="text/css" href="//cdn.curator.io/3.1/css/curator.css"/>
+        <div id="curator-feed"></div>
 
     </article>
 
+    <script type="text/javascript" src="//cdn.curator.io/3.1/js/curator.js"></script>
     <script type="text/javascript">
-        (function (d, id) {
-            if (d.getElementById(id)) return;
-            var t = d.createElement('script');
-            t.type = 'text/javascript';
-            t.src = '//assetscdn.stackla.com/media/js/widget/fluid-embed.js';
-            t.id = id;
-            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(t);
-        }(document, 'stackla-widget-js'));
+    	var widget = new Curator.Widgets.Waterfall({
+            container:'#curator-feed',
+            debug: false,
+            feedId:'46264058-39c2-4c9e-a951-b40840aa',
+            filter: {
+    	        showNetworks: false,
+    	        showSources: false
+    	    },
+            lang: 'en',
+            postsPerPage: 9,
+            waterfall: {
+                animate: true,
+                animateSpeed: 150,
+                gridWidth: 300,
+                showLoadMore: true
+            },
+    	});
     </script>
-
+    
+    <style>
+        
+    </style>
 
 {% endblock %}
 
