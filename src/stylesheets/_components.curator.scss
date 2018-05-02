@@ -55,3 +55,18 @@
         }
     }    
 }
+.crt-popup-visible .crt-popup-wrapper .crt-popup {
+    .crt-popup-header {
+        .crt-post-name {
+            position: relative;
+            left: 0;
+            top: 7px;
+            span {
+                font-weight: bold;
+            }
+        }
+        > img {
+            display: none;
+        }        
+    }
+}
