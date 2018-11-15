@@ -1,85 +1,96 @@
 {
-  "root": {
-    "src": "./src",
-    "dest": "./public"
-  },
-
-  "tasks": {
-    "browserSync": {
-      "server": {
-        "baseDir": "public"
-      }
+    "root": {
+        "src": "./src",
+        "dest": "./public"
     },
 
-    "static": {
-      "src": "static",
-      "dest": "./"
-    },
+    "tasks": {
+        "browserSync": {
+            "server": {
+                "baseDir": "public"
+            }
+        },
 
-    "js": {
-      "src": "javascripts",
-      "dest": "js",
-      "files": [
-          {
-            "source": ["src/javascripts/bookeasy-cart.js"],
-            "filename": "bookeasy-cart.js"
-          },{
-              "source": ["src/javascripts/bookeasy-details.js"],
-              "filename": "bookeasy-details.js"
-          },{
-              "source": ["src/javascripts/bookeasy-booking.js"],
-              "filename": "bookeasy-booking.js"
-          }, {
-              "source": ["src/javascripts/modernizr.custom.45448.js", "src/javascripts/prepare.js"],
-              "filename": "prepare.js"
-          }, {
-            "source": ["./node_modules/jquery-fancybox/source/js/jquery.fancybox.js", "./node_modules/jquery-columnizer/src/jquery.columnizer.js", "src/javascripts/main.js"],
-            "filename": "app.js"
-          }
-      ],
-      "extensions": ["js"]
-    },
+        "static": {
+            "src": "static",
+            "dest": "./"
+        },
 
-    "css": {
-      "src": "stylesheets",
-      "dest": "css",
-      "autoprefixer": {
-        "browsers": ["last 3 version"]
-      },
-      "sass": {
-        "indentedSyntax": false,
-        "includePaths": ["./node_modules"]
-      },
-      "extensions": ["sass", "scss", "css"]
-    },
+        "js": {
+            "src": "javascripts",
+            "dest": "js",
+            "files": [
+                {
+                    "source": ["src/javascripts/bookeasy-cart.js"],
+                    "filename": "bookeasy-cart.js"
+                },
+                {
+                    "source": ["src/javascripts/bookeasy-details.js"],
+                    "filename": "bookeasy-details.js"
+                },
+                {
+                    "source": ["src/javascripts/bookeasy-booking.js"],
+                    "filename": "bookeasy-booking.js"
+                },
+                {
+                    "source": [
+                        "src/javascripts/modernizr.custom.45448.js",
+                        "src/javascripts/prepare.js"
+                    ],
+                    "filename": "prepare.js"
+                },
+                {
+                    "source": [
+                        "./node_modules/jquery-fancybox/source/js/jquery.fancybox.js",
+                        "./node_modules/jquery-columnizer/src/jquery.columnizer.js",
+                        "src/javascripts/main.js"
+                    ],
+                    "filename": "app.js"
+                }
+            ],
+            "extensions": ["js"]
+        },
 
-    "html": {
-      "src": "html",
-      "dest": "./",
-      "dataFile": "data/global.json",
-      "htmlmin": {
-        "collapseWhitespace": true
-      },
-      "extensions": ["html", "json"],
-      "excludeFolders": ["layouts", "shared", "macros", "data"]
-    },
+        "css": {
+            "src": "stylesheets",
+            "dest": "css",
+            "autoprefixer": {
+                "browsers": ["last 3 version"]
+            },
+            "sass": {
+                "indentedSyntax": false,
+                "includePaths": ["./node_modules"]
+            },
+            "extensions": ["sass", "scss", "css"]
+        },
 
-    "images": {
-      "src": "images",
-      "dest": "images",
-      "extensions": ["jpg", "png", "svg", "gif"]
-    },
+        "html": {
+            "src": "html",
+            "dest": "./",
+            "dataFile": "data/global.json",
+            "htmlmin": {
+                "collapseWhitespace": true
+            },
+            "extensions": ["html", "json"],
+            "excludeFolders": ["layouts", "shared", "macros"]
+        },
 
-    "fonts": {
-      "src": "fonts",
-      "dest": "fonts",
-      "extensions": ["woff2", "woff", "eot", "ttf", "svg"]
-  },
+        "images": {
+            "src": "images",
+            "dest": "images",
+            "extensions": ["jpg", "png", "svg", "gif"]
+        },
 
-    "svgSprite": {
-      "src": "sprites",
-      "dest": "images",
-      "extensions": ["svg"]
+        "fonts": {
+            "src": "fonts",
+            "dest": "fonts",
+            "extensions": ["woff2", "woff", "eot", "ttf", "svg"]
+        },
+
+        "svgSprite": {
+            "src": "sprites",
+            "dest": "images",
+            "extensions": ["svg"]
+        }
     }
-  }
 }

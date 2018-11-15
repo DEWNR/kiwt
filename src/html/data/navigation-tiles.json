@@ -3,28 +3,45 @@
         "title": "This is the title",
         "tiles": [
             {
-                "title": "Lorem ipsum dolor sit",
+                "title": "Experience",
                 "class": "",
                 "text": "Etiam eget faucibus nunc. Nam egestas congue tempus",
-                "image": "http://placehold.it/640x640",
+                "image": "images/experience.jpg",
                 "href": "#"
-            },{
-                "title": "Consectetur adipiscing",
+            },
+            {
+                "title": "Trip essentials",
                 "class": "",
                 "text": "Sed ac ornare diam. Quisque tincidunt eu dolor nec venenatis",
-                "image": "http://placehold.it/640x640",
+                "image": "images/trip-essentials.jpg",
                 "href": "#"
-            },{
-                "title": "Sed rutrum congue",
+            },
+            {
+                "title": "Nature and History",
                 "class": "",
                 "text": "Vivamus pretium turpis ac scelerisque finibus",
-                "image": "http://placehold.it/640x640",
+                "image": "images/nature-history.jpg",
                 "href": "#"
-            },{
-                "title": "Mauris vestibulum erat",
+            },
+            {
+                "title": "Gallery",
                 "class": "",
                 "text": "Integer fringilla scelerisque tortor. Etiam sollicitudin congue felis",
-                "image": "http://placehold.it/640x640",
+                "image": "images/gallery.jpg",
+                "href": "#"
+            },
+            {
+                "title": "FAQs",
+                "class": "",
+                "text": "Integer fringilla scelerisque tortor. Etiam sollicitudin congue felis",
+                "image": "images/faq.jpg",
+                "href": "#"
+            },
+            {
+                "title": "Book Now",
+                "class": "",
+                "text": "Integer fringilla scelerisque tortor. Etiam sollicitudin congue felis",
+                "image": "images/book.jpg",
                 "href": "#"
             }
         ]
