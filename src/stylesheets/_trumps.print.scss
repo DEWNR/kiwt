@@ -1,0 +1,101 @@
+/*------------------------------------*\
+    #Print
+\*------------------------------------*/
+
+@media print {
+    .menu-toggle,
+    .article-card__image,
+    .cta-strip,
+    .navigation-tiles,
+    .site-hero__button,
+    .site-footer,
+    .full-bg:not(.full-bg--map) {
+        display: none;
+    }
+
+    html,
+    body,
+    .article-card {
+        background-color: #fff;
+        -webkit-print-color-adjust: exact;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+        page-break-after: avoid;
+    }
+
+    .global-header {
+        box-shadow: none;
+    }
+
+    .site-header {
+        border-bottom: 1px solid #4e4e4e;
+        margin-bottom: 20px;
+        box-shadow: none;
+
+        &__logotype {
+            max-width: initial;
+        }
+    }
+
+    .content {
+        max-width: 1080px;
+        margin: 0 auto;
+
+        &::after {
+            content: "© Copyright, Department for Environment and Water 2016";
+            display: block;
+            text-align: center;
+            padding: 20px;
+        }
+    }
+
+    .full-bg--map {
+        page-break-inside: avoid;
+    }
+
+    .site-hero {
+        background-image: none !important;
+
+        &__content {
+            padding: 0 $sagovau-spacing-unit-base / 2;
+        }
+
+        &__title {
+            color: $sagovau-color-text-base;
+            text-align: left;
+        }
+    }
+
+    .page-intro {
+        text-align: left;
+    }
+
+    .article-card {
+        height: auto !important;
+        page-break-inside: avoid;
+    }
+
+    /* == TABS == */
+    .tabpanel {
+        display: block !important;
+        page-break-inside: avoid;
+
+        &__accordion-title {
+            background-color: transparent;
+            font-weight: bold;
+            padding-left: 0;
+        }
+        &__accordion-content {
+            display: block;
+        }
+        &__title {
+            text-align: left;
+        }
+    }
+
+}
