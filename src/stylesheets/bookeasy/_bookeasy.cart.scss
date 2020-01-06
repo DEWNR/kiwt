@@ -142,7 +142,7 @@ div#wdOverlayContent.overlayMode {
 
     div.add-to-cart-form div.name span.item-name,
     div.item-details div.name span.item-name {
-        background-color: #08713e;
+        background-color: $sagovau-color-brand;
     }
 
     div.add-to-cart-form {
@@ -175,7 +175,7 @@ div#wdOverlayContent.overlayMode {
                 background-image: none;
 
                 span {
-                    background-color: #08713e;
+                    background-color: $sagovau-color-brand;
                     border: 0;
                     border-radius: 6px;
                 }
@@ -183,7 +183,7 @@ div#wdOverlayContent.overlayMode {
 
             a.checkOutNow,
             a.addToCart {
-                background-color: #08713e;
+                background-color: $sagovau-color-brand;
                 background-image: none;
                 border: 0;
             }
@@ -191,13 +191,13 @@ div#wdOverlayContent.overlayMode {
                 display: none !important;
             }
             a.checkOutNow {
-                background-color: #08713e!important;
+                background-color: $sagovau-color-brand !important;
             }
         }
 
         div.accordian {
             div.accordian-header {
-                background: #08713e;
+                background: $sagovau-color-brand;
             }
 
             &.expanded div.accordian-header {
@@ -206,7 +206,7 @@ div#wdOverlayContent.overlayMode {
                     content: " - ";
                     display: inline-block;
                     background-color: #fff;
-                    color: #08713e;
+                    color: $sagovau-color-brand;
                     width: 1.6rem;
                     text-align: center;
                     margin-right: 8px;
@@ -221,7 +221,7 @@ div#wdOverlayContent.overlayMode {
                     content: " + ";
                     display: inline-block;
                     background-color: #fff;
-                    color: #08713e;
+                    color: $sagovau-color-brand;
                     width: 1.6rem;
                     text-align: center;
                     margin-right: 8px;
@@ -299,7 +299,7 @@ div#wdOverlayContent.overlayMode {
 
             &:focus {
                 outline: 0;
-                border-color: #08713e;
+                border-color: $sagovau-color-brand;
             }
         }
 
@@ -340,7 +340,7 @@ div#wdOverlayContent.overlayMode {
     div.add-to-cart-form div.AdditionalData div.BookingQuestionsData div.booking-questions div.bookingQuestion div.bookingQuestionSets div.bookingQuestionSet div.bookingQuestionFields div.bookingQuestion-container div.bookingQuestion-answers div.bookingQuestion-answer-message,
     div.item-details div.AdditionalData div.BookingQuestionsData div.booking-questions div.bookingQuestion div.bookingQuestionSets div.bookingQuestionSet div.bookingQuestionFields div.bookingQuestion-container div.bookingQuestion-answers div.bookingQuestion-answer-message {
 
-        color: #08713e;
+        color: $sagovau-color-brand;
     }
 }
 
