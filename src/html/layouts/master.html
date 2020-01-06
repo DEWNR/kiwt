@@ -1,6 +1,7 @@
 {% from 'macros/helpers.html' import sprite %}
 
 {% set image_path = 'images/' %}
+{% set css_path = 'css/' %}
 {% set share_path = 'http://www.environment.sa.gov.au/files/templates/00000000-0000-0000-0000-000000000000/f88a7f3c-df7e-430a-825c-24cfa8dec9a8/' %}
 {% set site_prefix = 'kiwt' %}
 {% set site_url = 'http://www.environment.sa.gov.au' %}
@@ -19,10 +20,9 @@
 
     <title>{% block title %}Department of Environment, Water and Natural Resources (DEWNR){% endblock %}</title>
 
+    <link href="{{ css_path }}inline/fonts.css" rel="stylesheet">
 
     <!-- Scripts -->
-
-    <script type="text/javascript" src="//fast.fonts.net/jsapi/e0cc203f-7221-4daf-a2d5-815483dba107.js" async></script>
 
     <script src="js/prepare.js" inline></script>
 
@@ -38,12 +38,6 @@
 
     <link href="css/main.css" rel="stylesheet">
     <link href="css/bookeasy.css" rel="stylesheet">
-
-    <noscript>
-
-        <link type="text/css" rel="stylesheet" href="//fast.fonts.net/cssapi/e0cc203f-7221-4daf-a2d5-815483dba107.css">
-
-    </noscript>
 
     <!-- End Stylesheets -->
 

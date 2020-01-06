@@ -1,0 +1,120 @@
+@import "../_settings.general";
+
+$sagovau-enable-dewnrger-normal-400: true !default;
+$sagovau-enable-dewnrger-italic-400: true !default;
+
+$sagovau-enable-dewnrger-normal-700: true !default;
+$sagovau-enable-dewnrger-italic-700: true !default;
+
+@font-face {
+  font-family: 'proxima-nova';
+  src:
+    // local('ProximaNova-Regular'),
+    url(#{$sagovau-path-fonts}ProximaNovaRegular.woff2) format('woff2'),
+    url(#{$sagovau-path-fonts}ProximaNovaRegular.woff) format('woff');
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  unicode-range: 'U+000-5FF';
+}
+
+@font-face {
+  font-family: 'proxima-nova';
+  src:
+    // local('ProximaNovaItalic'),
+    url(#{$sagovau-path-fonts}ProximaNovaItalic.woff2) format('woff2'),
+    url(#{$sagovau-path-fonts}ProximaNovaItalic.woff) format('woff');
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  unicode-range: 'U+000-5FF';
+}
+
+@font-face {
+  font-family: 'proxima-nova';
+  src:
+    // local('ProximaNova-Bold'),
+    url(#{$sagovau-path-fonts}ProximaNovaBold.woff2) format('woff2'),
+    url(#{$sagovau-path-fonts}ProximaNovaBold.woff) format('woff');
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  unicode-range: 'U+000-5FF';
+}
+
+@font-face {
+  font-family: 'proxima-nova';
+  src:
+    // local('ProximaNova-BoldItalic'),
+    url(#{$sagovau-path-fonts}ProximaNovaBoldItalic.woff2) format('woff2'),
+    url(#{$sagovau-path-fonts}ProximaNovaBoldItalic.woff2) format('woff');
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  unicode-range: 'U+000-5FF';
+}
+
+@if ($sagovau-enable-dewnrger-normal-400 == true) {
+  @font-face {
+    font-family: Dewnrger;
+    src:
+      // local('Dewnrger55Roman'),
+      url(#{$sagovau-path-fonts}Dewnrger55Roman.woff2) format('woff2'),
+      url(#{$sagovau-path-fonts}Dewnrger55Roman.woff2) format('woff');
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    unicode-range: 'U+000-5FF';
+  }
+}
+
+@if ($sagovau-enable-dewnrger-italic-400 == true) {
+  @font-face {
+    font-family: Dewnrger;
+    src:
+      // local('Dewnrger56Italic'),
+      url(#{$sagovau-path-fonts}Dewnrger56Italic.woff2) format('woff2'),
+      url(#{$sagovau-path-fonts}Dewnrger56Italic.woff2) format('woff');
+    font-style: italic;
+    font-weight: 400;
+    font-display: swap;
+    unicode-range: 'U+000-5FF';
+  }
+}
+
+@if ($sagovau-enable-dewnrger-normal-700 == true) {
+  @font-face {
+    font-family: Dewnrger;
+    src:
+      // local('Dewnrger65Bold'),
+      url(#{$sagovau-path-fonts}Dewnrger65Bold.woff2) format('woff2'),
+      url(#{$sagovau-path-fonts}Dewnrger65Bold.woff2) format('woff');
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    unicode-range: 'U+000-5FF';
+  }
+}
+
+@if ($sagovau-enable-dewnrger-italic-700 == true) {
+  @font-face {
+    font-family: Dewnrger;
+    src:
+      // local('Dewnrger66BoldItalic'),
+      url(#{$sagovau-path-fonts}Dewnrger66BoldItalic.woff2) format('woff2'),
+      url(#{$sagovau-path-fonts}Dewnrger66BoldItalic.woff2) format('woff');
+    font-style: italic;
+    font-weight: 700;
+    font-display: swap;
+    unicode-range: 'U+000-5FF';
+  }
+}
+
+// declare the fonts so that they aren't stripped out with css nano
+.font-body {
+  font-family: 'proxima-nova', sans-serif;
+}
+
+.font-heading {
+  font-family: 'dewnrger', sans-serif;
+}
