@@ -1,0 +1,32 @@
+/*------------------------------------*\
+    #MESSAGE
+\*------------------------------------*/
+
+.message {
+    color: #f5333f;
+    background-color: #ffffff;
+    border: 2px solid currentColor;
+    border-radius: 8px;
+    padding: 0.5em 1em;
+    display: flex;
+    align-items: center;
+}
+
+.message__icon {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    width: 60px;
+
+    svg {
+        width: 60%;
+        height: 60%;
+    }
+}
+
+.message__text {
+    color: #231f20;
+    text-align: left;
+    font-weight: 700;
+    line-height: 1.3;
+}
